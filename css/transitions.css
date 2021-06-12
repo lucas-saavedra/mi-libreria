@@ -1,9 +1,9 @@
-
+/*rotacion del logo por dos segundos*/
 .banner img:hover {
     transform: rotate(360deg);
     transition: transform 2s;
 }
-
+/*botones del menu cambiar de color al pasar sobre ellos*/
 .navbar li :hover {
     text-decoration: none;
     font-weight: 600;
@@ -11,5 +11,39 @@
     background-color: #00adb5;
     border-radius: 0.5em;
 }
+
+/*tarjetas de los libros se aclaran cuando se pasa sobre ellos*/
 .container .tarjeta_libro:hover {
-    background: linear-gradient(70deg, rgb(37, 31, 31), rgb(214, 166, 166));}
+    background: linear-gradient(70deg, rgb(37, 31, 31), rgb(214, 166, 166));
+    transform: scale(1.1,1.1);
+    transition: transform 0.1s;
+}
+
+.gridAboutInfoVideo1:hover{
+    width: 100%;
+}
+/*pequeña animacion que descubre el titulo*/
+.titular h2 {
+    animation-duration: 3s;
+    animation-name: mostrar_titulo;
+    animation-iteration-count: infinite;
+    width: 0%;
+    overflow: hidden;
+ }
+
+ @keyframes mostrar_titulo {
+    0% {
+      opacity: 0;
+    }
+    25%{width: 10%;
+    }
+    50%{width: 50%;
+    }
+    75%{width: 75%;
+    }
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+ }
+ 
