@@ -1,0 +1,41 @@
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    height: 10em;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5em;
+  }
+
+  .banner .logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+.gridResponsive{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas:
+    "Navbar Novedades"
+}
+.novedades{
+grid-area: Novedades;
+}
+.navbar{
+  grid-area: Navbar; 
+}
+.navbarMenu{
+  flex-direction: column;
+  height: 100%;
+  font-size: 0.80em;
+}
+
+}

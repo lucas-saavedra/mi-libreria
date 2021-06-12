@@ -1,0 +1,15 @@
+
+.banner img:hover {
+    transform: rotate(360deg);
+    transition: transform 2s;
+}
+
+.navbar li :hover {
+    text-decoration: none;
+    font-weight: 600;
+    color: #eeeeee;
+    background-color: #00adb5;
+    border-radius: 0.5em;
+}
+.container .tarjeta_libro:hover {
+    background-color: rgba(202, 130, 130, 0.733);}
