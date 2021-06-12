@@ -12,4 +12,4 @@
     border-radius: 0.5em;
 }
 .container .tarjeta_libro:hover {
-    background-color: rgba(202, 130, 130, 0.733);}
+    background: linear-gradient(70deg, rgb(37, 31, 31), rgb(214, 166, 166));}
