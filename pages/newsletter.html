@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    
         <header>
             <div class="banner">
                 <!--Logo de la web municipal-->
@@ -46,63 +46,61 @@
 
 
         <main>
-            <h2>¡Suscribete para estar al dia de todas novedades!</h2>
+            <div class="contenedorForm">
+                <h2>¡Suscribete para estar al dia de todas novedades!</h2>
+                <form action="" method="get" class="formulario">
+                    <div class="inputForm">
 
-            <form action="" method="get" class="formNewsletter">
-                <div>
+                        <label for="nombrecompleto">Nombre y Apellido</label>
 
-                </div>
-                <div class="inputForm">
+                        <input type="text" name="nombre" placeholder="Ingrese su nombre completo">
+                    </div>
 
-                    <label for="nombrecompleto">Nombre y Apellido</label>
+                    <div class="inputForm">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Aquie su email">
+                    </div>
 
-                    <input type="text" name="nombre" placeholder="Ingrese su nombre completo">
-                </div>
+                    <div class="inputForm">
+                        <label for="profesion">¿Que categorias les gusta más?</label>
+                        <select name="profesion">
+                            <option value="carpintero">Terror</option>
+                            <option value="soldador">Romance</option>
+                            <option value="mecanico">Ciencia Ficcion</option>
+                            <option vale="profesor">Ciencia</option>
+                            <option vale="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="inputForm">
+                        <div id="novedades"> ¿Desea recibir novedades por email?
+                            <input type="checkbox" name="acepta" value="1"></div>
+                    </div>
+                    <div class="inputForm">
+                        <label for="nativo">¿Acepta terminos y condiciones?</label>
 
-                <div class="inputForm">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="Aquie su email">
-                </div>
+                        Si <input type="radio" name="nativo" id="nativo">
+                        No <input type="radio" name="nativo" id="nativo">
 
-                <div class="inputForm">
-                    <label for="profesion">¿Que categorias les gusta más?</label>
-                    <select name="profesion">
-                        <option value="carpintero">Terror</option>
-                        <option value="soldador">Romance</option>
-                        <option value="mecanico">Ciencia Ficcion</option>
-                        <option vale="profesor">Ciencia</option>
-                        <option vale="otro">Otro</option>
-                    </select>
-                </div>
-                <div class="inputForm">
-                    <div id="novedades"> ¿Desea recibir novedades por email?
-                        <input type="checkbox" name="acepta" value="1"></div>
-                </div>
-                <div class="inputForm">
-                    <label for="nativo">¿Acepta terminos y condiciones?</label>
+                    </div>
 
-                    Si <input type="radio" name="nativo" id="nativo">
-                    No <input type="radio" name="nativo" id="nativo">
+                    <div class="inputForm">
+                        <fieldset>
+                            <legend>Extra</legend>
+                            <label for="feedback">¿Que libros les gustaria que traigamos?</label><br><br>
+                            <textarea name="feedback" rows="10" cols="50"
+                                placeholder="Ingrese sus recomendaciones"></textarea>
+                        </fieldset>
+                    </div>
 
-                </div>
-
-
-                <div class="inputForm">
-                    <fieldset>
-                        <legend>Extra</legend>
-                        <label for="feedback">¿Que libros les gustaria que traigamos?</label><br><br>
-                        <textarea name="feedback" rows="10" cols="50"
-                            placeholder="Ingrese sus recomendaciones"></textarea>
-                    </fieldset>
-                </div>
-
-                <div class="botonForm">
-                    <input type="submit" value="Registrarse">
-                    <input type="reset" value="Cancelar">
-                </div>
+                    <div class="botonForm">
+                        <input type="submit" value="Registrarse">
+                        <input type="reset" value="Cancelar">
+                    </div>
 
 
-            </form>
+                </form>
+            </div>
+
         </main>
         <footer>
 
