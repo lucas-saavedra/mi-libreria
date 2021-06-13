@@ -18,6 +18,9 @@
     transform: scale(1.1,1.1);
     transition: transform 0.1s;
 }
+.categorias .tarjeta_libro:hover {
+    background: linear-gradient(70deg, rgb(37, 31, 31), rgb(214, 166, 166));
+}
 
 .gridAboutInfoVideo1:hover{
     width: 100%;
