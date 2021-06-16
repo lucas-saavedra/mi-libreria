@@ -207,7 +207,6 @@
 
 
  /*estilos para el formulario de Newsletter*/
-
 .contenedorForm {
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7),
@@ -217,10 +216,10 @@
   background-repeat: no-repeat;
   display: flex;
   height:50em;
- 
   padding: 1em;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  flex-wrap:nowrap;
+  align-items: center;
 }
 .contenedorForm h2{
 height: 10%;
