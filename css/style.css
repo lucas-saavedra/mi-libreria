@@ -1,98 +1,23 @@
-/*Paleta de colores*/
-.color1 {
-  color: #222831;
-}
-
-.color2 {
-  color: #00adb5;
-}
-
-.color3 {
-  color: #393e46;
-}
-
-.color4 {
-  color: #eeeeee;
-}
-.color5 {
-  color: #291b00;
-}
 
 
-
-/* fuente global */
+/*  global */
 * {
   font-family: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
-
-/* estilo al banner */
-.banner {
-  background-image: linear-gradient( #07090a, #393e46);
-  height: 5em;
-  display: flex;
-  justify-content: space-between;
-  color: white;
-  align-items: center;
-}
-
-.banner .logoContainer {
-  margin-left: 1em;
+/*Seccion frases*/
+.frases{
+  height: 11em;
+  background: linear-gradient(to right, rgb(165, 142, 86), rgb(73, 57, 11));
   overflow: hidden;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
- 
 }
-.busqueda{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.frases p{
+  color: wheat;
 }
-.banner img {
-  height: 4em;
-  width: 4em;
-  background-color: #00adb5;
-  border-radius: 5em;
-}
-
-.banner .usuario {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 1em;
-  width: 100%;
-}
-
-/* estilo y clase para el navbar */
-
-.navbarMenu {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 3.5em;
-  background-image: linear-gradient( #393e46,#252017);
-
-}
-
-.navbar li {
-  height: 100%;
-  width: 100%;
-  display: flex;
-}
-
-.navbar li a {
-  display: flex;
-  text-decoration: none;
-  font-weight: 600;
-  width: 100%;
-  color: #eeeeee;
-  align-items: center;
-  justify-content: center;
+.footerCita{
+  color: rgb(185, 178, 164);
 }
 
 /* clase para la section novedades */
@@ -102,46 +27,23 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  overflow: hidden;
-  display: flex;
-  height: 30em;
+}
+/*seccion razones para leer*/
+.razonesLectura{
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)), url('../img/libreria.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1 {
+  color: rgb(245, 222, 179);
 }
 
-.novedades ul {
-  list-style-position: outside;
-  list-style-type: circle;
-}
-.novedades .titular {
-  width: 50%;
-  padding: 1em 2em;
-  color: wheat
-}
-
-.novedades .titular h2 {
-  font-style: italic;
-  font-size: 2em;
-  padding-bottom: 0.70em;
-}
-
-.novedades .titular h3 {
-  font-size: 1.5em;
-  padding-bottom: 0.35em;
-}
-
-.novedades .titular p {
-  line-height: 2em;
-}
 
 /*contenedor de las tarjetas de los libros y sus puntuaciones*/
 /*estilos para los libros e imagenes*/
-.container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #291b00;
-  color: white;
-}
-
 
 .tarjeta_libro {
   width: 15em;
@@ -153,8 +55,10 @@
   text-align: center;
   background-color: rgba(255, 255, 255, 0.13);
 }
- img {
+
+img {
   width: 10em;
+
 }
 
 
@@ -171,9 +75,11 @@
   display: flex;
   height: 80em;
 }
-.categorias .tarjeta_libro{
+
+.categorias .tarjeta_libro {
   width: 10em;
 }
+
 .categoriasTags {
   width: 15%;
 
@@ -200,14 +106,17 @@
   padding: 0.5em;
 }
 
-.categoriasLibros img {
+
+/* img {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  padding-bottom: 0.1em;
-}
+  height: 100%;
+} */
 
 
- /*estilos para el formulario de Newsletter*/
-.contenedorForm {
+/*estilos para el formulario de Newsletter*/
+/* .contenedorForm {
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)), url('../img/libros.jpg');
@@ -215,31 +124,35 @@
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  height:50em;
+  height: 50em;
   padding: 1em;
   flex-direction: column;
-  flex-wrap:nowrap;
+  flex-wrap: nowrap;
   align-items: center;
 }
-.contenedorForm h2{
-height: 10%;
+
+.contenedorForm h2 {
+  height: 10%;
 }
-.contenedorForm .formulario{
-  height: 90%; 
+
+.contenedorForm .formulario {
+  height: 90%;
   display: flex;
   flex-direction: column;
   padding: 1em;
 }
-.formulario .inputForm{
+
+.formulario .inputForm {
   display: flex;
   margin: 0.5em;
   justify-content: space-between;
 }
-.formulario .botonForm{
+
+.formulario .botonForm {
   display: flex;
   justify-content: space-around;
 }
-
+ */
 
 
 /*----------GRID PARA LA SECCION SOBRE MI/ ABOUT------------*/
@@ -301,7 +214,7 @@ height: 10%;
   grid-area: Video;
   align-self: center;
   justify-self: center;
-  width:100%;
+  width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.13);
 }
@@ -324,7 +237,7 @@ height: 10%;
 
 /* estilo para el pie de pagina */
 footer {
-  background-image: linear-gradient(to bottom, #3f2b25 , #7a6b5b);
-  text-align: center;
-  padding: 1em;
+  background-color: #222831;
+  color: #eeeeee;
+  height: 5em;
 }
