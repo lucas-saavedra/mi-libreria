@@ -6,64 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
+    <script src="https://use.fontawesome.com/02747bd8aa.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    
-        <header>
-            <div class="banner">
-                <!--Logo de la web municipal-->
-                <div class="logoContainer">
-                    <a href="/index.html"> <img src="https://image.flaticon.com/icons/png/512/96/96430.png"
-                            alt="logo_libreria"></a>
-                </div>
 
-                <div class="busqueda">
-                    <label for="busqueda">Busqueda</label>
-                    <input type="text">
-                </div>
+    <header>
+        <!-- INICIO EL NAVBAR BS -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <!-- INICIO  LOGO  -->
+                <a class="navbar-brand" href="../index.html">
+                    <i class="fa fa-camera-retro fa-lg me-2"></i>
+                    Mi Libreria</a>
+                <!-- FIN LOGO -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                <div class="usuario">
-                    <p class="usuario" for="user">Usuario: Lucas Saavedra</p>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- INICIO NAV -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="categorias.html">Categorias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Acerca de</a></li>
+                        <li class="nav-item"><a class="nav-link" href="newsletter.html">Newsletter</a></li>
+                        <!-- FIN NAV -->
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Busque aquí el libro que desea"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
                 </div>
-
             </div>
-        </header>
-
-        <nav class="navbar">
-            <!--barra de navegacion-->
-            <ul class="navbarMenu">
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="categorias.html">Categorias</a></li>
-                <li><a href="about.html">Acerca de</a></li>
-                <li><a href="newsletter.html">Newsletter</a></li>
-            </ul>
         </nav>
+        <!-- FIN NAVBAR BS -->
+    </header>
 
+    <main>
+        <section class="container py-5">
+            <h2 class="display-6 text-center">¡Suscribete para estar al dia de todas novedades!</h2>
 
-        <main>
-            <div class="contenedorForm">
-                <h2>¡Suscribete para estar al dia de todas novedades!</h2>
-                <form action="" method="get" class="formulario">
-                    <div class="inputForm">
-
-                        <label for="nombrecompleto">Nombre y Apellido</label>
-
-                        <input type="text" name="nombre" placeholder="Ingrese su nombre completo">
+            
+            <form class="row g-3" action="" method="POST">
+                
+                    <div class="col-md-6">
+                        <label for="nombrecompleto" class="form-label">Nombre y Apellido</label>
+                        <input type="text" class="form-control" name="nombre" placeholder="Ingrese su nombre completo">
+                    </div>
+                    <div class=" col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" name="email" placeholder="Aqui su email">
                     </div>
 
-                    <div class="inputForm">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" placeholder="Aquie su email">
-                    </div>
 
-                    <div class="inputForm">
-                        <label for="profesion">¿Que categorias les gusta más?</label>
-                        <select name="profesion">
+                    <div class="col-md-12">
+                        <label class="form-label" for="profesion">¿Que categorias les gusta más?</label>
+                        <select class="form-control" id="" name="profesion">
                             <option value="carpintero">Terror</option>
                             <option value="soldador">Romance</option>
                             <option value="mecanico">Ciencia Ficcion</option>
@@ -71,41 +79,67 @@
                             <option vale="otro">Otro</option>
                         </select>
                     </div>
-                    <div class="inputForm">
-                        <div id="novedades"> ¿Desea recibir novedades por email?
-                            <input type="checkbox" name="acepta" value="1"></div>
-                    </div>
-                    <div class="inputForm">
-                        <label for="nativo">¿Acepta terminos y condiciones?</label>
+                    
 
-                        Si <input type="radio" name="nativo" id="nativo">
-                        No <input type="radio" name="nativo" id="nativo">
+                        <div class="col-md-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    ¿Desea recibir novedades por email?
+                                </label>
+                            </div>
+                        </div>
 
-                    </div>
-
-                    <div class="inputForm">
-                        <fieldset>
-                            <legend>Extra</legend>
-                            <label for="feedback">¿Que libros les gustaria que traigamos?</label><br><br>
-                            <textarea name="feedback" rows="10" cols="50"
-                                placeholder="Ingrese sus recomendaciones"></textarea>
-                        </fieldset>
-                    </div>
-
-                    <div class="botonForm">
-                        <input type="submit" value="Registrarse">
-                        <input type="reset" value="Cancelar">
+                        <div class="col-md-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    ¿Acepta terminos y condiciones?
+                                </label>
+                            </div>
+                        </div>
                     </div>
 
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Que libros les gustaria que traigamos?</label>
+                      </div>
 
-                </form>
+        
+                </div>
+
+                <div class="col-12 text-center">
+                    <input class="btn btn-primary" type="submit" value="Registrarse">
+                    <input  class="btn btn-secondary" type="reset" value="Cancelar">
+                </div>
+
+
+            </form>
+
+        </section>
+
+
+
+
+
+
+
+
+        </div>
+        </div>
+        </div>
+
+
+
+    </main>
+    <footer class="bg-black text-center align-items-center py-4">
+        <div class="container px-5">
+            <div class="text-white-50 small">
+                <div class="mb-2">&copy; Lucas Saavedra - Desarrollo Web</div>
             </div>
-
-        </main>
-        <footer>
-
-            <p>Mas informacion y contacto</p>
-            <!-- imagenes de las diferentes redes sociales y el contacto telefonico-->
-
-        </footer>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
