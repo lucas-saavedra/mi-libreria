@@ -7,6 +7,36 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.img-end{
+display: flex;
+justify-content: end;
+}
+.heroNovedades h1 {
+  color: rgb(245, 222, 179);
+}
+.fondoSelf{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.8),
+  rgba(53, 51, 51, 0.1)), url('https://source.unsplash.com/1280x720/?self'); 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #eeeeee;
+}
+.imgFondo{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7),
+  rgba(0, 0, 0, 0.1)), url('https://source.unsplash.com/1080x720/?books'); 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#imgRandom{
+  background-image: url('https://source.unsplash.com/1600x900/?black');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
 /*Seccion frases*/
 .frases{
   height: 11em;
@@ -37,15 +67,13 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-h1 {
-  color: rgb(245, 222, 179);
-}
+
 
 
 /*contenedor de las tarjetas de los libros y sus puntuaciones*/
 /*estilos para los libros e imagenes*/
 
-.tarjeta_libro {
+/* .tarjeta_libro {
   width: 15em;
   margin: 0.25em;
   text-align: center;
@@ -54,17 +82,17 @@ h1 {
   margin: 0.25em;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.13);
-}
-
+} */
+/* 
 img {
   width: 10em;
 
-}
+} */
 
 
 /*---------ESTILOS FLEXBOX SECCION CATEGORIAS-------*/
 
-.categorias {
+/* .categorias {
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)), url('../img/libros.jpg');
@@ -83,8 +111,8 @@ img {
 .categoriasTags {
   width: 15%;
 
-}
-
+} */
+/* 
 .categoriasTags ul {
   display: flex;
   flex-direction: column;
@@ -105,7 +133,7 @@ img {
 .categoriasLibrosTarjeta h4 {
   padding: 0.5em;
 }
-
+ */
 
 /* img {
   display: flex;
