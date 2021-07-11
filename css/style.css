@@ -1,271 +1,93 @@
-
-
+@charset "UTF-8";
 /*  global */
+/*rotacion del logo por dos segundos*/
+.banner img:hover {
+  transform: rotate(360deg);
+  transition: transform 2s; }
+
+/*tarjetas de los libros se aclaran cuando se pasa sobre ellos*/
+.container .tarjeta_libro:hover {
+  transform: scale(1.05, 1.05);
+  transition: transform 0.1s; }
+
+/*pequeña animacion que descubre el titulo*/
+.titular h2 {
+  animation-duration: 3s;
+  animation-name: mostrar_titulo;
+  animation-iteration-count: infinite;
+  width: 0%;
+  overflow: hidden; }
+
+@keyframes mostrar_titulo {
+  0% {
+    opacity: 0; }
+  25% {
+    width: 10%; }
+  50% {
+    width: 50%; }
+  75% {
+    width: 75%; }
+  100% {
+    opacity: 1;
+    width: 100%; } }
+
+/*aplicacion de media queries*/
 * {
   font-family: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
-.img-end{
-display: flex;
-justify-content: end;
-}
+.img-end {
+  display: flex;
+  justify-content: end; }
+
 .heroNovedades h1 {
-  color: rgb(245, 222, 179);
-}
-.fondoSelf{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.8),
-  rgba(53, 51, 51, 0.1)), url('https://source.unsplash.com/1280x720/?self'); 
+  color: wheat; }
+
+.fondoObscuro, .fondoSelf, .imgFondo, #imgRandom, .novedades, .razonesLectura {
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  color: #eeeeee;
-}
-.imgFondo{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.7),
-  rgba(0, 0, 0, 0.1)), url('https://source.unsplash.com/1080x720/?books'); 
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#imgRandom{
-  background-image: url('https://source.unsplash.com/1600x900/?black');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
- 
-}
+  background-repeat: no-repeat; }
+
+.fondoSelf {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(53, 51, 51, 0.1)), url("https://source.unsplash.com/1280x720/?self"); }
+
+.imgFondo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(53, 51, 51, 0.1)), url("https://source.unsplash.com/1280x720/?books"); }
+
+#imgRandom {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(53, 51, 51, 0.1)), url("https://source.unsplash.com/1280x720/?black"); }
+
 /*Seccion frases*/
-.frases{
+.frases {
   height: 11em;
-  background: linear-gradient(to right, rgb(165, 142, 86), rgb(73, 57, 11));
-  overflow: hidden;
-}
-.frases p{
-  color: wheat;
-}
-.footerCita{
-  color: rgb(185, 178, 164);
-}
+  background: linear-gradient(to right, #a58e56, #49390b);
+  overflow: hidden; }
+  .frases p {
+    color: wheat; }
+
+.footerCita {
+  color: #b9b2a4; }
 
 /* clase para la section novedades */
 .novedades {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)), url('../img/libros.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/libros.jpg"); }
+
 /*seccion razones para leer*/
-.razonesLectura{
-  
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)), url('../img/libreria.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+.razonesLectura {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/libreria.jpg"); }
 
+#tarjetaBlog-violeta p {
+  color: #6139bd; }
 
+#tarjetaBlog-rojizo p {
+  color: #a02c66; }
 
-/*contenedor de las tarjetas de los libros y sus puntuaciones*/
-/*estilos para los libros e imagenes*/
+#tarjetaBlog-verde_manzana p {
+  color: #1d8f72; }
 
-/* .tarjeta_libro {
-  width: 15em;
-  margin: 0.25em;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.13);
-  border-radius: 0.5em;
-  margin: 0.25em;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.13);
-} */
-/* 
-img {
-  width: 10em;
-
-} */
-
-
-/*---------ESTILOS FLEXBOX SECCION CATEGORIAS-------*/
-
-/* .categorias {
-  color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)), url('../img/libros.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: flex;
-  height: 80em;
-}
-
-.categorias .tarjeta_libro {
-  width: 10em;
-}
-
-.categoriasTags {
-  width: 15%;
-
-} */
-/* 
-.categoriasTags ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em 1em;
-  list-style-type: none;
-  height: 30%;
-}
-
-.categoriasLibros {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: flex-start;
-}
-
-.categoriasLibrosTarjeta h4 {
-  padding: 0.5em;
-}
- */
-
-/* img {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-} */
-
-
-/*estilos para el formulario de Newsletter*/
-/* .contenedorForm {
-  color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)), url('../img/libros.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  height: 50em;
-  padding: 1em;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
-.contenedorForm h2 {
-  height: 10%;
-}
-
-.contenedorForm .formulario {
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-}
-
-.formulario .inputForm {
-  display: flex;
-  margin: 0.5em;
-  justify-content: space-between;
-}
-
-.formulario .botonForm {
-  display: flex;
-  justify-content: space-around;
-}
- */
-
-
-/*----------GRID PARA LA SECCION SOBRE MI/ ABOUT------------*/
-.gridAbout {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 150px 150px 150px 150px;
-  grid-template-areas:
-    "Imagen Imagen"
-    "Info1 Aside"
-    "Video Aside"
-    "Info1V Info2V";
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)), url('../img/libros.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: aliceblue;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  height: 90vh;
-  align-content: flex-start;
-}
-
-.gridAboutImagen {
-  grid-area: Imagen;
-  background-image: url("https://static.vecteezy.com/system/resources/previews/002/083/760/non_2x/diverse-cartoon-people-background-vector.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
-
-.gridAboutInfo {
-  grid-area: Info1;
-  overflow: hidden;
-  justify-self: flex-start;
-  padding-left: 1em;
-  background-color: rgba(255, 255, 255, 0.13);
-}
-
-.gridAboutAside {
-  grid-area: Aside;
-  background-color: rgba(255, 255, 255, 0.13);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-
-  width: 100%;
-  height: 100%;
-}
-
-.gridAboutAside p {
-  padding: 1em;
-}
-
-.gridAboutVideo {
-  grid-area: Video;
-  align-self: center;
-  justify-self: center;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.13);
-}
-
-.gridAboutInfoVideo1 {
-  grid-area: Info1V;
-  justify-self: end;
-  background-color: rgba(255, 255, 255, 0.13);
-  width: 150px;
-  transition: width 2s;
-}
-
-.gridAboutInfoVideo2 {
-  grid-area: Info2V;
-  justify-self: start;
-  background-color: rgba(255, 255, 255, 0.13);
-  width: 150px;
-
-}
-
-/* estilo para el pie de pagina */
 footer {
   background-color: #222831;
   color: #eeeeee;
-  height: 5em;
-}
+  height: 5em; }

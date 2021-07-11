@@ -1,0 +1,115 @@
+/*  global */
+@import "transitions.scss";
+@import "mediaqueries.scss";
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.img-end {
+    display: flex;
+    justify-content: end;
+}
+
+.heroNovedades {
+    h1 {
+        color: rgb(245, 222, 179);
+    }
+}
+
+.fondoObscuro {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin tipo_fondo($tipo) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),
+            rgba(53, 51, 51, 0.1)), url('https://source.unsplash.com/1280x720/?'+$tipo);
+}
+
+.fondoSelf {
+    @include tipo_fondo('self');
+    @extend .fondoObscuro;
+
+}
+
+.imgFondo {
+    @include tipo_fondo('books');
+    @extend .fondoObscuro;
+}
+
+#imgRandom {
+    @include tipo_fondo('black');
+    @extend .fondoObscuro;
+
+}
+
+/*Seccion frases*/
+$color_claro : rgb(165, 142, 86);
+$color_oscuro: rgb(73, 57, 11);
+
+.frases {
+    height: 11em;
+    background: linear-gradient(to right, $color_claro, $color_oscuro);
+    overflow: hidden;
+
+    p {
+        color: wheat;
+    }
+}
+
+.footerCita {
+    color: rgb(185, 178, 164);
+}
+
+/* clase para la section novedades */
+.novedades {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)), url('../img/libros.jpg');
+    @extend .fondoObscuro;
+}
+
+/*seccion razones para leer*/
+.razonesLectura {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)), url('../img/libreria.jpg');
+    @extend .fondoObscuro;
+}
+
+$listacolores : 'violeta',
+'rojizo',
+'verde_manzana';
+
+@each $color in $listacolores {
+    
+    #tarjetaBlog-#{$color} {
+       p{
+           @if $color == 'violeta'{
+            color : rgb(97, 57, 189); 
+           }
+           @if $color == 'rojizo'{
+            color : rgb(160, 44, 102); 
+           }
+           @if $color == 'verde_manzana'{
+            color : rgb(29, 143, 114); 
+           }
+          
+       } 
+    }
+     
+}
+
+;
+
+
+
+footer {
+    background-color: #222831;
+    color: #eeeeee;
+    height: 5em;
+}
