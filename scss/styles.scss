@@ -103,12 +103,10 @@ body {
 
 .imgFondo {
     @include imagen('books');
-
 }
 
 #imgRandom {
     @include imagen('black');
-
 
 }
 
