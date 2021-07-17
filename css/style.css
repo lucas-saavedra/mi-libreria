@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*  global */
 /*rotacion del logo por dos segundos*/
 .banner img:hover {
   transform: rotate(360deg);
@@ -9,6 +8,9 @@
 .container .tarjeta_libro:hover {
   transform: scale(1.05, 1.05);
   transition: transform 0.1s; }
+
+.container .overflow {
+  overflow: hidden; }
 
 /*pequeña animacion que descubre el titulo*/
 .titular h2 {
@@ -32,62 +34,87 @@
     width: 100%; } }
 
 /*aplicacion de media queries*/
-* {
+/* PALETA DE COLORES*/
+/*  BODY */
+body {
   font-family: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
 
-.img-end {
-  display: flex;
-  justify-content: end; }
-
-.heroNovedades h1 {
-  color: wheat; }
-
-.fondoObscuro, .fondoSelf, .imgFondo, #imgRandom, .novedades, .razonesLectura {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.fondoSelf {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(53, 51, 51, 0.1)), url("https://source.unsplash.com/1280x720/?self"); }
-
-.imgFondo {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(53, 51, 51, 0.1)), url("https://source.unsplash.com/1280x720/?books"); }
-
-#imgRandom {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(53, 51, 51, 0.1)), url("https://source.unsplash.com/1280x720/?black"); }
+/* clase para la section novedades */
+.novedadesFondo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/libros.jpg"); }
+  .novedadesFondo .novedadesHero h1 {
+    color: #e6ccb2; }
+  .novedadesFondo .novedadesHero h2 {
+    color: #9c6644; }
+  .novedadesFondo .novedadesHero p {
+    color: #e6ccb2;
+    font-size: 1.25em; }
+  .novedadesFondo .novedadesImgNews {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("https://source.unsplash.com/_Zua2hyvTBk/600x400");
+    height: 15em;
+    border-radius: 1%; }
+  .novedadesFondo .novedadesImgPago {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("https://source.unsplash.com/s8F8yglbpjo/600x400");
+    height: 15em;
+    border-radius: 1%; }
+  .novedadesFondo .novedadesImgDelivery {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("https://source.unsplash.com/phUtWl8RyFE/600x400");
+    height: 15em;
+    border-radius: 1%; }
 
 /*Seccion frases*/
 .frases {
   height: 11em;
-  background: linear-gradient(to right, #a58e56, #49390b);
+  background: linear-gradient(to bottom, #9c6644, #7f5539);
   overflow: hidden; }
   .frases p {
-    color: wheat; }
-
-.footerCita {
-  color: #b9b2a4; }
-
-/* clase para la section novedades */
-.novedades {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/libros.jpg"); }
+    color: #e6ccb2; }
+  .frases .footerCita {
+    color: #b9b2a4; }
 
 /*seccion razones para leer*/
-.razonesLectura {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/libreria.jpg"); }
+.razonesLectura .fondorazonesLectura {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("https://source.unsplash.com/v8DSLoY80Xk/600x400"); }
 
-#tarjetaBlog-violeta p {
-  color: #6139bd; }
+.razonesLectura h3 {
+  color: #ede0d4; }
 
-#tarjetaBlog-rojizo p {
-  color: #a02c66; }
+.razonesLectura p {
+  color: #e6ccb2; }
 
-#tarjetaBlog-verde_manzana p {
-  color: #1d8f72; }
+.fondoSelf {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("https://source.unsplash.com/IuLgi9PWETU/600x400"); }
+
+.imgFondo {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("books"); }
+
+#imgRandom {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("black"); }
 
 footer {
-  background-color: #222831;
-  color: #eeeeee;
+  background-color: #6d6875;
   height: 5em; }

@@ -1,115 +1,121 @@
-/*  global */
 @import "transitions.scss";
 @import "mediaqueries.scss";
 
-* {
+/* PALETA DE COLORES*/
+
+$gris_obscuro : #6d6875;
+$marron_obscuro : #7f5539;
+$marron_claro : #9c6644;
+$marron_acuarela : #b99f8e;
+$madera : #e6ccb2;
+$beige : #ede0d4;
+
+/*  BODY */
+body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.img-end {
-    display: flex;
-    justify-content: end;
-}
-
-.heroNovedades {
-    h1 {
-        color: rgb(245, 222, 179);
-    }
-}
-
-.fondoObscuro {
+@mixin imagen($url) {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-@mixin tipo_fondo($tipo) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8),
-            rgba(53, 51, 51, 0.1)), url('https://source.unsplash.com/1280x720/?'+$tipo);
-}
-
-.fondoSelf {
-    @include tipo_fondo('self');
-    @extend .fondoObscuro;
-
-}
-
-.imgFondo {
-    @include tipo_fondo('books');
-    @extend .fondoObscuro;
-}
-
-#imgRandom {
-    @include tipo_fondo('black');
-    @extend .fondoObscuro;
-
-}
-
-/*Seccion frases*/
-$color_claro : rgb(165, 142, 86);
-$color_oscuro: rgb(73, 57, 11);
-
-.frases {
-    height: 11em;
-    background: linear-gradient(to right, $color_claro, $color_oscuro);
-    overflow: hidden;
-
-    p {
-        color: wheat;
-    }
-}
-
-.footerCita {
-    color: rgb(185, 178, 164);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.8)), url($url);
+    
 }
 
 /* clase para la section novedades */
-.novedades {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+.novedadesFondo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.7)), url('../img/libros.jpg');
-    @extend .fondoObscuro;
+
+    .novedadesHero {
+        h1 {
+            color: $madera;
+        }
+
+        h2 {
+            color: $marron_claro;
+        }
+
+        p {
+            color: $madera;
+            font-size: 1.25em;
+        }
+        
+    }
+
+    .novedadesImgNews {
+        @include imagen('https://source.unsplash.com/_Zua2hyvTBk/600x400');
+        height: 15em;
+        border-radius: 1%;
+    }
+
+    .novedadesImgPago {
+        @include imagen('https://source.unsplash.com/s8F8yglbpjo/600x400');
+        height: 15em;
+        border-radius: 1%;
+    }
+
+    .novedadesImgDelivery {
+        @include imagen('https://source.unsplash.com/phUtWl8RyFE/600x400');
+        height: 15em;
+        border-radius: 1%;
+    }
+}
+
+/*Seccion frases*/
+.frases {
+    height: 11em;
+    background: linear-gradient(to bottom, $marron_claro, $marron_obscuro);
+    overflow: hidden;
+
+    p {
+        color: $madera;
+    }
+
+    .footerCita {
+        color: rgb(185, 178, 164);
+    }
 }
 
 /*seccion razones para leer*/
 .razonesLectura {
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)), url('../img/libreria.jpg');
-    @extend .fondoObscuro;
-}
-
-$listacolores : 'violeta',
-'rojizo',
-'verde_manzana';
-
-@each $color in $listacolores {
-    
-    #tarjetaBlog-#{$color} {
-       p{
-           @if $color == 'violeta'{
-            color : rgb(97, 57, 189); 
-           }
-           @if $color == 'rojizo'{
-            color : rgb(160, 44, 102); 
-           }
-           @if $color == 'verde_manzana'{
-            color : rgb(29, 143, 114); 
-           }
-          
-       } 
+    .fondorazonesLectura {
+        @include imagen('https://source.unsplash.com/v8DSLoY80Xk/600x400');
     }
-     
+    h3{
+        color: $beige
+    }
+    p{
+        color: $madera
+    }
 }
 
-;
+
+
+.fondoSelf {
+    @include imagen('https://source.unsplash.com/IuLgi9PWETU/600x400');
+}
+
+.imgFondo {
+    @include imagen('books');
+
+}
+
+#imgRandom {
+    @include imagen('black');
+
+
+}
+
 
 
 
 footer {
-    background-color: #222831;
-    color: #eeeeee;
+    background-color: $gris_obscuro;
     height: 5em;
 }

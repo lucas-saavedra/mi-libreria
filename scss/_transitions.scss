@@ -1,39 +1,54 @@
 /*rotacion del logo por dos segundos*/
 .banner img:hover {
-    transform: rotate(360deg);
-    transition: transform 2s;
+  transform: rotate(360deg);
+  transition: transform 2s;
 }
 
 
 
 /*tarjetas de los libros se aclaran cuando se pasa sobre ellos*/
-.container .tarjeta_libro:hover {
-    transform: scale(1.05,1.05);
+.container {
+
+  .tarjeta_libro:hover {
+    transform: scale(1.05, 1.05);
     transition: transform 0.1s;
+
+  }
+
+  .overflow {
+    overflow: hidden;
+  }
 }
+
 
 /*pequeña animacion que descubre el titulo*/
 .titular h2 {
-    animation-duration: 3s;
-    animation-name: mostrar_titulo;
-    animation-iteration-count: infinite;
-    width: 0%;
-    overflow: hidden;
- }
+  animation-duration: 3s;
+  animation-name: mostrar_titulo;
+  animation-iteration-count: infinite;
+  width: 0%;
+  overflow: hidden;
+}
 
- @keyframes mostrar_titulo {
-    0% {
-      opacity: 0;
-    }
-    25%{width: 10%;
-    }
-    50%{width: 50%;
-    }
-    75%{width: 75%;
-    }
-    100% {
-      opacity: 1;
-      width: 100%;
-    }
- }
- 
+@keyframes mostrar_titulo {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    width: 10%;
+  }
+
+  50% {
+    width: 50%;
+  }
+
+  75% {
+    width: 75%;
+  }
+
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
