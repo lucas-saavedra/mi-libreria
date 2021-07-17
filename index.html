@@ -5,77 +5,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- primero -->
     <title>Mi Libreria</title>
+   
+
     <script src="https://use.fontawesome.com/02747bd8aa.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
-   
-     <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
- 
+
 </head>
 
 <body>
+    <div class="novedadesFondo">
+        <header>
+            <!-- INICIO EL NAVBAR BS -->
+            <nav class="navbar navbar-expand-md navbar-dark ">
+                <div class="container-fluid">
+                    <!-- INICIO  LOGO  -->
+                    <a class="navbar-brand" href="index.html">
+                        <i class="fa fa-camera-retro fa-lg me-2"></i>
+                    </a>
+                    <!-- FIN LOGO -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <!-- INICIO NAV -->
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="pages/blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/categorias.html">Categorias</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="pages/about.html">Acerca de</a></li>
 
-    <header>
-     
-
-        <!-- INICIO EL NAVBAR BS -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <!-- INICIO  LOGO  -->
-                <a class="navbar-brand" href="index.html">
-                    <i class="fa fa-camera-retro fa-lg me-2"></i>
-                    Mi Libreria</a>
-                <!-- FIN LOGO -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
-
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <!-- INICIO NAV -->
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="pages/blog.html">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/categorias.html">Categorias</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/about.html">Acerca de</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/newsletter.html">Newsletter</a></li>
-                        <!-- FIN NAV -->
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Busque aquí el libro que desea"
-                            aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-        <!-- FIN NAVBAR BS -->
-    </header>
-    <main>
-        <!-- INICIO SECCION NOVEDADES -->
-        <section class="bg-light ">
-            <div class="container-fluid novedades px-5">
-                <div class="row py-5">
-                    <div class="col-md-6">
-                        <div class="heroNovedades mb-5 mb-lg-0 text-center text-lg-start">
-                            <h1 class=" display-1 lh-1 mb-3">Encontrá los mejores libros</h1>
-                            <p class="lead fw-normal text-muted mb-5">¡No busques más! Tenemos la mayor variedad de
-                                libros de america latina</p>
+                            <!-- FIN NAV -->
+                        </ul>
+                        <div class="d-flex navbar-nav ">
+                            <a class=" nav-item"><a class="nav-link" href="pages/newsletter.html">Newsletter</a>
                         </div>
                     </div>
+                </div>
+            </nav>
+            <!-- FIN NAVBAR BS -->
+        </header>
+
+        <!-- INICIO SECCION NOVEDADES -->
+        <section class="container-fluid px-5">
+            <div class="row py-5">
+                <div class="col-md-6">
+                    <div class="novedadesHero mb-5 mb-lg-0 text-center text-lg-start">
+                        <h1 class="display-3 lh-1 mb-3">Bienvenido a MiLibreria</h1>
+                        <h2 class=" display-6 lh-1 mb-3">Encontrá los mejores libros</h2>
+                        <p class="fw-normal text-muted mb-5">¡No busques más! Tenemos la mayor variedad de libros de
+                            América latina.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- CARROUSEL -->
+                    <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <div class="novedadesImgNews">
+                                    <div class="carousel-caption  d-md-block">
+                                        <h5>¡Nuevos ingresos! 2021</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item " data-bs-interval="10000">
+                                <div class="novedadesImgPago">
+                                    <div class="carousel-caption  d-md-block">
+                                        <h5>¡Agregamos nuevos medios de pago!</h5>
+                                        <p>Visa,Mastercard,Mercado Pago,etc</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <div class="novedadesImgDelivery">
+                                    <div class="carousel-caption d-md-block">
+                                        <h5>¡Envios gratis a CABA y GBA!</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <!-- CARROUSEL -->
+
 
                 </div>
         </section>
-        <!-- FIN SECCION NOVEDADES -->
+    </div>
+    <!-- FIN SECCION NOVEDADES -->
 
+
+    <main>
         <!-- INICIO FRASES -->
         <section class=" frases text-center py-5 bg-light">
             <div class="container-fluid px-2">
@@ -83,18 +135,18 @@
                 <div id="" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                    
-                          <div class="row gx-5 justify-content-center">
+
+                            <div class="row gx-5 justify-content-center">
                                 <div class="col-xl-8">
                                     <blockquote class="blockquote text-center">
-                                        <p class="h-6" class="mb-1">
-                                            “Cuando oigo que un hombre tiene el hábito de la
+                                        <p class="h-4" class="mb-0">“Cuando oigo que un hombre tiene el hábito de la
                                             lectura, estoy
-                                            predispuesto a pensar bien de él”</p>
-                                        <div class="blockquote-footer footerCita">Nicolás de Avellaneda. </div>
+                                            predispuesto a pensar bien de él”
+                                        </p>
+                                        <div class="blockquote-footer footerCita"> Nicolás de Avellaneda.</div>
                                     </blockquote>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
                         <div class="carousel-item">
                             <div class="row gx-3 justify-content-center">
@@ -111,7 +163,8 @@
                             <div class="row gx-3 justify-content-center">
                                 <div class="col-xl-8">
                                     <blockquote class="blockquote text-center">
-                                        <p class="h-4" class="mb-0">“ Si buscas la perfección nunca estarás contento”
+                                        <p class="h-4" class="mb-0">“ Si buscas la perfección nunca estarás
+                                            contento”
                                         </p>
                                         <div class="blockquote-footer footerCita">Leo Tolstoy.</div>
                                     </blockquote>
@@ -138,24 +191,88 @@
 
         <!-- SECCION PORQUE ES BUENO LEER -->
         <section class="razonesLectura">
-            <div class="row py-5 gx-5 d-flex ">
-                <div class="col-md-12 text-center px-5">
-                    <h2>5 razones por las que leer
-                        libros es importante en la vida
-                        de las personas, aunque hay más…</h2>
+            <div class="container-fluid fondorazonesLectura">
+                <div class="container">
+                    <div class="row py-5 justify-content-center">
+                        <div class="col-md-6 col-lg-4 mb-5">
+                            <div class=" mx-auto">
+                                <div class="card-body text-center">
+
+                                    <div class="bg-secondary bg-gradient text-white rounded-3 mb-4 mt-n4">
+                                        <i class="bi bi-book fa-2x"></i>
+                                    </div>
+
+                                    <h3 class="fs-4 fw-bold">La lectura es evasión y entretenimiento.</h3>
+                                    <p class="mb-0">Los libros transportan a las personas a otros lugares, momentos y
+                                        personajes sin moverse del sitio.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 mb-5">
+                            <div class=" mx-auto">
+                                <div class="card-body text-center">
+                                    <div class="bg-secondary bg-gradient text-white rounded-3 mb-4 mt-n4">
+                                        <i class="bi bi-bookmark-heart fa-2x"></i> </div>
+
+                                    <h3 class="fs-4 fw-bold">La lectura favorece el aprendizaje.</h3>
+                                    <p class="mb-0">La información recibida se transforma en conocimiento.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                            <div class=" mx-auto">
+                                <div class="card-body text-center">
+                                    <div class=" bg-secondary bg-gradient text-white rounded-3 mb-4 mt-n4">
+                                        <i class="bi bi-journal fa-2x"></i> </div>
+
+                                    <h3 class="fs-4 fw-bold">La lectura despierta la curiosidad y alimenta la
+                                        imaginación.
+                                    </h3>
+                                    <p class="mb-0"> Leer activa la inspiración, imaginación y el surgimiento de ideas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class=" mx-auto">
+                                <div class="card-body text-center">
+                                    <div class=" bg-secondary bg-gradient text-white rounded-3 mb-4 mt-n4">
+                                        <i class="bi bi-journal-bookmark-fill fa-2x"></i> </div>
+
+                                    <h3 class="fs-4 fw-bold"> La lectura mejora las habilidades de comunicación. </h3>
+                                    <p class="mb-0"> La lectura, además de activar el cerebro, hace que se amplíe el
+                                        vocabulario, mejore la gramática y ortografía, y favorezca la consecución de
+                                        habilidades verbales, rapidez mental, toma de decisiones y confianza.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class=" mx-auto">
+                                <div class="card-body text-center">
+                                    <div class=" bg-secondary bg-gradient text-white rounded-3 mb-4 mt-n4">
+                                        <i class="bi bi-journal-bookmark-fill fa-2x"></i> </div>
+                                    <h3 class="fs-4 fw-bold">La lectura empatiza y sociabiliza. </h3>
+                                    <p class="mb-0"> Leer libros hace posible que cualquier persona lectora se ponga en
+                                        la
+                                        piel de otra, empatizando con ella en función de las situaciones vividas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-
-                <ul class="list-group px-5">
-                    <li class="list-group-item">La lectura es evasión y entretenimiento. </li>
-                    <li class="list-group-item">La lectura favorece el aprendizaje.</li>
-                    <li class="list-group-item">La lectura despierta la curiosidad y alimenta la imaginación. </li>
-                    <li class="list-group-item">La lectura mejora las habilidades de comunicación.</li>
-                    <li class="list-group-item">La lectura empatiza y sociabiliza.</li>
-                </ul>
-            </div>
-
         </section>
         <!-- FIN SECCION PORQUE ES BUENO LEER -->
+
+
 
     </main>
 
@@ -166,6 +283,7 @@
             </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
