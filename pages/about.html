@@ -19,169 +19,213 @@
     <!--  copyright -->
     <meta name="copyright" content="Mi libreria S.A.">
 
-    <script src="https://use.fontawesome.com/02747bd8aa.js"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
 
 </head>
 
-<body>
-    <header>
-        <!-- INICIO EL NAVBAR BS -->
-        <!-- INICIO EL NAVBAR BS -->
-        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-            <div class="container-fluid">
-                <!-- INICIO  LOGO  -->
-                <a class="navbar-brand" href="../index.html">
-                    <i class="fa fa-camera-retro fa-lg me-2"></i>
-                    Mi Libreria</a>
-                <!-- FIN LOGO -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <!-- INICIO NAV -->
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="categorias.html">Categorias</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">Acerca de</a></li>
-                    </ul>
-                    <div class="d-flex navbar-nav ">
-                        <a class=" nav-item"><a class="nav-link" href="newsletter.html">Newsletter</a>
-                    </div>
-                     <!-- FIN NAV -->
-                </ul>
-
-                </div>
-            </div>
-        </nav>
-    </header>
-
+<body class="fondoBodyAbout ">
     <main>
-        <!--  PRESENTACION -->
-        <section>
-            <div class="container-fluid">
-                <div class="row py-5 px-5 fondoSelf text-light bg-dark">
-                    <div class="col ">
-                        <h2 class="display-4 text-center">¡HOLA! ME LLAMO LUCAS SAAVEDRA!</h2>
-                        <p>Y SOY EL CREADOR DE MiLIBRERIA.
-                            SI ERES AMANTE DE LOS LIBROS, SEGURO QUE MI HISTORIA
-                            TE RESULTARÁ FAMILIAR. SI ES AHORA CUANDO ESTÁS EMPEZANDO
-                            A DESCUBRIR EL HECHIZO DE LA LECTURA, PONTE CÓMODO/A: TE VOY
-                            A CONTAR CÓMO NACIÓ LÉEME, LA PLATAFORMA TRANSMEDIA QUE TE HARÁ
-                            DISFRUTAR LOS LIBROS DE UNA MANERA COMPLETAMENTE NUEVA.
-                        </p>
-                        <p class=" display-6 text-center"> ESTA ES MI HISTORIA…</p>
+        <div class="fondoSelf ">
+            <header>
+                <!-- INICIO EL NAVBAR BS -->
+                <!-- INICIO EL NAVBAR BS -->
+                <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+                    <div class="container-fluid">
+                        <!-- INICIO  LOGO  -->
+                        <a class="navbar-brand" href="../index.html">
+                            <i class=" logoAnim fa fa-camera-retro fa-lg me-2"></i>
+                            Mi Libreria</a>
+                        <!-- FIN LOGO -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <!-- INICIO NAV -->
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link" href="categorias.html">Categorias</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.html">Acerca de</a></li>
+                            </ul>
+                            <div class="d-flex navbar-nav ">
+                                <a class=" nav-item"><a class="nav-link" href="newsletter.html">Newsletter</a>
+                            </div>
+                            <!-- FIN NAV -->
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+
+            <!--  PRESENTACION -->
+            <section class="">
+                <div class="container-fluid ">
+                    <div class="row m-4 text-light heroPresentacion ">
+                        <div class="col py-4  ">
+                            <h2 class="display-4 text-center">¡HOLA! Me llamo Lucas Saavedra!</h2>
+                            <p class="h5 text-center">Y soy el creador de milibreria.
+                                si eres amante de los libros, seguro que mi historia
+                                te resultará familiar. si es ahora cuando estás empezando
+                                a descubrir el hechizo de la lectura, ponte cómodo/a:
+                            </p>
+                            <p class=" display-6 text-center"> Esta es mi historia…</p>
+                        </div>
                     </div>
                 </div>
-
-            </div>
-        </section>
+            </section>
+        </div>
 
         <!--  DESARROLLO DE HISTORIA -->
+
         <section>
-
-            <div class="container">
-
-                <div class=" row p5">
-                    <div class="row p-4 d-flex align-items-center justify-content-center ">
-                        <div class="col-md-6 ">
-                            <div>
-                                <h2> CRECÍ RODEADA DE LIBROS.</h2>
-                                <p>
-                                    En mi casa era normal verlos por todas partes: en las estanterías, en las mesitas de
-                                    noche,
-                                    desperdigados por el sofá, en el comedor, la cocina y las habitaciones. Antes de
-                                    aprender a
-                                    leer ya jugueteaba con ellos e imaginaba que era capaz de descifrar esos símbolos
-                                    extraños
-                                    que contenían. En cuanto empecé a escribir, me dio por garabatear palabras en sus
-                                    márgenes
-                                    (“casa”, “gato”), como si fueran diccionarios que tenía que rellenar.
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="col-md-6 ">
-                            <img src="https://source.unsplash.com/500x250/?books" class=" rounded img-fluid" alt="">
-                        </div>
+            <div class="container-fluid">
+                <div class=" TarjetaAbout row shadow ">
+                    <div class=" order-last order-sm-last order-md-first col-md-6  ">
+                        <h2 > Creci rodeado de libros</h2>
+                        <p >
+                            En mi casa era normal verlos por todas partes: en las estanterías, en las mesitas de
+                            noche,
+                            desperdigados por el sofá, en el comedor, la cocina y las habitaciones. Antes de
+                            aprender a
+                            leer ya jugueteaba con ellos e imaginaba que era capaz de descifrar esos símbolos
+                            extraños
+                            que contenían. En cuanto empecé a escribir, me dio por garabatear palabras en sus
+                            márgenes
+                            (“casa”, “gato”), como si fueran diccionarios que tenía que rellenar.
+                        </p>
                     </div>
 
-                    <div class="row p-4 d-flex align-items-center justify-content-center ">
-                        <div class="col-md-6 ">
-                            <img src="https://source.unsplash.com/500x250/?books" class=" rounded img-fluid" alt="">
-                        </div>
-                        <div class="col-md-6 ">
-                            <div>
-                                <h2> DESDE EL PRINCIPIO DE MI VIDA QUEDÓ CLARO QUE MI MUNDO ERAN LAS PALABRAS.</h2>
-                                <p>
-                                    Podía pasarme horas y horas leyendo y escribiendo, creando mis propias historias y
-                                    sumergiéndome en las que otros habían escrito. Y, cuanto más leía, más me daba
-                                    cuenta de
-                                    que la mayoría de personas a mi alrededor no compartían mi pasión por los libros.
-                                    ¿Cómo
-                                    era posible que tanta gente no supiera que gracias a los libros puedes viajar,
-                                    conocer,
-                                    emocionarte y descubrir tantas realidades apasionantes? No podía comprenderlo.
-                                </p>
+                    <div class="col-md-6">
+                        <div class="text-center">
+                            <div class=" py-4 ">
+                                <i class="fas fa-book fa-7x d-block d-sm-none"></i>
+                                <img src="https://source.unsplash.com/lUaaKCUANVI/500x250"
+                                    class="rounded img-fluid 	d-none d-sm-block" alt="Una pila de libros">
                             </div>
-
                         </div>
-
-                    </div>
-                    <div class="row p-4 d-flex align-items-center justify-content-center ">
-                        <div class="col-md-6 ">
-                            <div>
-                                <h2> PERO LA VIDA CONTINUABA.</h2>
-                                <p>
-                                    Pasé por el colegio y por el instituto, en los que, por cierto, me aburrí bastante.
-                                    A la
-                                    hora de elegir carrera universitaria me decanté por la opción que parecía más
-                                    adecuada
-                                    para alguien que amaba leer y escribir: me matriculé en periodismo. Al mismo tiempo
-                                    me
-                                    formé en música, oratoria y teatro, sin saber que estaba empezando a reunir los
-                                    ingredientes que unos años más tarde darían lugar a Léeme.
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="col-md-6 ">
-                            <img src="https://source.unsplash.com/500x250/?books" class=" rounded img-fluid" alt="">
-                        </div>
-                    </div>
-
-                    <div class="row p-4 d-flex align-items-center justify-content-center ">
-                        <div class="col-md-6 ">
-                            <img src="https://source.unsplash.com/500x250/?books" class=" rounded img-fluid" alt="">
-                        </div>
-                        <div class="col-md-6 ">
-                            <div>
-                                <h3> AL ACABAR PERIODISMO, EMPRENDÍ MI PRIMER PROYECTO PROFESIONAL.</h3>
-                                <p>
-                                    Y, al mismo tiempo, empecé a estudiar la carrera de arte dramático. Leer y escribir
-                                    seguían siendo mis dos pasiones, mi medio de expresión, mi refugio en los momentos
-                                    complicados. Y, claro, seguía preguntándome por qué no era así para tantas personas.
-                                    ¿Qué podía hacer? ¿Cómo acercar los libros a quienes aún no habían descubierto el
-                                    placer
-                                    de leer?
-                                </p>
-                            </div>
-
-                        </div>
-
                     </div>
                 </div>
+
+                <div class="TarjetaAbout row shadow rounded">
+                    <div class=" col-md-6">
+                        <div class="text-center">
+                            <div class=" py-4">
+                                <i class="fas fa-pencil-alt fa-7x d-block d-sm-none"></i>
+                                <img src="https://source.unsplash.com/GkinCd2enIY/500x250"
+                                    class="rounded img-fluid d-none d-sm-block" alt="letras en una pared">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="my-2">Desde el principio de mi vida quedó claro que mi mundo eran las
+                            palabras</h2>
+                        <p>
+                            Podía pasarme horas y horas leyendo y escribiendo, creando mis propias historias y
+                            sumergiéndome en las que otros habían escrito. Y, cuanto más leía, más me daba
+                            cuenta de
+                            que la mayoría de personas a mi alrededor no compartían mi pasión por los libros.
+                            ¿Cómo
+                            era posible que tanta gente no supiera que gracias a los libros puedes viajar,
+                            conocer,
+                            emocionarte y descubrir tantas realidades apasionantes? No podía comprenderlo.
+                        </p>
+                    </div>
+
+                </div>
+
+
+
+                <div class="TarjetaAbout row shadow ">
+                    <div class="order-last order-sm-last order-md-first col-md-6">
+                        <h2 class="my-2">Pero la vida continuaba</h2>
+                        <p>
+                            Pasé por el colegio y por el instituto, en los que, por cierto, me aburrí bastante.
+                            A la
+                            hora de elegir carrera universitaria me decanté por la opción que parecía más
+                            adecuada
+                            para alguien que amaba leer y escribir: me matriculé en periodismo. Al mismo tiempo
+                            me
+                            formé en música, oratoria y teatro, sin saber que estaba empezando a reunir los
+                            ingredientes que unos años más tarde darían lugar a Léeme.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 ">
+                        <div class="text-center">
+                            <div class=" py-4">
+                                <i class="fas fa-school fa-7x d-block d-sm-none"></i>
+                                <img src="https://source.unsplash.com/_C2A8THeKKs/500x250"
+                                    class="rounded img-fluid d-none d-sm-block" alt="lapices en un cesto de un escritorio">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="TarjetaAbout row shadow  ">
+                    <div class=" col-md-6 ">
+                        <div class="text-center">
+                            <div class=" py-4">
+                            <i class="fas fa-font fa-7x d-block d-sm-none"></i>
+                            <img src="https://source.unsplash.com/hgFY1mZY-Y0/500x250"
+                                class="rounded img-fluid d-none d-sm-block" alt="Mujer leyendo con el libro apoyado en la cara">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="my-2">Desde el principio de mi vida quedó claro que mi mundo eran las
+                        palabras</h2>
+                    <p>
+                        Podía pasarme horas y horas leyendo y escribiendo, creando mis propias historias y
+                        sumergiéndome en las que otros habían escrito. Y, cuanto más leía, más me daba
+                        cuenta de
+                        que la mayoría de personas a mi alrededor no compartían mi pasión por los libros.
+                        ¿Cómo
+                        era posible que tanta gente no supiera que gracias a los libros puedes viajar,
+                        conocer,
+                        emocionarte y descubrir tantas realidades apasionantes? No podía comprenderlo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="TarjetaAbout row shadow">
+                <div class="order-last order-sm-last order-md-first col-md-6">
+                    <h2>Al acabar periodismo, emprendí mi primer proyecto profesional</h2>
+                    <p>
+                        Y, al mismo tiempo, empecé a estudiar la carrera de arte dramático. Leer y escribir
+                        seguían siendo mis dos pasiones, mi medio de expresión, mi refugio en los momentos
+                        complicados. Y, claro, seguía preguntándome por qué no era así para tantas personas.
+                        ¿Qué podía hacer? ¿Cómo acercar los libros a quienes aún no habían descubierto el
+                        placer
+                        de leer?
+                    </p>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="text-center">
+                        <div class=" py-4">
+                            <i class="fas fa-crown fa-7x d-block d-sm-none"></i>
+                            <img src="https://source.unsplash.com/hhq1Lxtuwd8/500x250"
+                                class="rounded img-fluid d-none d-sm-block" alt="Un signo de pregunta luminoso">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             </div>
 
         </section>

@@ -8,7 +8,8 @@
     <!-- primero -->
     <title>Mi Libreria</title>
     <!-- segundo -->
-    <meta name="description" content="La mejor librería de toda Latinoamérica, en donde encontrarás una gran variedad de contenido genial para tus lecturas">
+    <meta name="description"
+        content="La mejor librería de toda Latinoamérica, en donde encontrarás una gran variedad de contenido genial para tus lecturas">
     <!-- tercero -->
     <link rel="shortcut icon" href="img/libro.png" type="image/x-icon">
     <!-- keyword -->
@@ -33,19 +34,21 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
 <body>
-    <div class="novedadesFondo">
+    <!-- la seccion novedades usa todo el view port -->
+    <div class="novedadesFondo ">
         <header>
             <!-- INICIO EL NAVBAR BS -->
-            <nav class="navbar navbar-expand-md navbar-dark ">
+            <nav class="navbar navbar-expand-lg navbar-dark ">
                 <div class="container-fluid">
                     <!-- INICIO  LOGO  -->
                     <a class="navbar-brand" href="index.html">
-                        <i class="fa fa-camera-retro fa-lg me-2"></i>
-                    </a>
+                        <i class="fa fa-camera-retro fa-lg me-2 logoAnim"></i>
+                        Mi Libreria</a>
                     <!-- FIN LOGO -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -75,17 +78,17 @@
         </header>
 
         <!-- INICIO SECCION NOVEDADES -->
-        <section class="container-fluid px-5">
-            <div class="row py-5">
-                <div class="col-md-6">
-                    <div class="novedadesHero mb-5 mb-lg-0 text-center text-lg-start">
-                        <h1 class="display-3 lh-1 mb-3">Bienvenido a MiLibreria</h1>
-                        <h2 class=" display-6 lh-1 mb-3">Encontrá los mejores libros</h2>
-                        <p class="fw-normal text-muted mb-5">¡No busques más! Tenemos la mayor variedad de libros de
+        <section class="container-fluid px-5 ">
+            <div class="row py-5 d-flex align-items-center heroIndex">
+                <div class="col-md-12 col-lg-12  d-flex  align-self-center">
+                    <div class="novedadesHero  mb-lg-0 text-center text-lg-start">
+                        <h1 class="display-3 lh-1 mb-3 novedadesAnim ">Bienvenido a MiLibreria</h1>
+                        <h2 class=" display-6 lh-1 mb-3 ">Encontrá los mejores libros</h2>
+                        <p class="fw-normal ">¡No busques más! Tenemos la mayor variedad de libros de
                             América latina.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-12">
                     <!-- CARROUSEL -->
                     <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
@@ -142,154 +145,137 @@
     <!-- FIN SECCION NOVEDADES -->
 
 
-    <main>
-        <!-- INICIO FRASES -->
-        <section class=" frases text-center py-5 bg-light">
-            <div class="container-fluid px-2">
+    <!-- INICIO FRASES -->
+    <section class="frases container-fluid">
+        <div class="row d-flex ">
+            <div class="col align-self-center">
                 <!--  CARROUSEL -->
-                <div id="" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-
-                            <div class="row gx-5 justify-content-center">
-                                <div class="col-xl-8">
-                                    <blockquote class="blockquote text-center">
-                                        <p class="h-4" class="mb-0">“Cuando oigo que un hombre tiene el hábito de la
-                                            lectura, estoy
-                                            predispuesto a pensar bien de él”
-                                        </p>
-                                        <div class="blockquote-footer footerCita"> Nicolás de Avellaneda.</div>
-                                    </blockquote>
-                                </div>
-                            </div>
+                <div id="" class="carousel slide " data-bs-ride="carousel">
+                    <div class="carousel-inner d-flex align-items-center">
+                        <div class="carousel-item active ">
+                            <blockquote class="blockquote text-center frasesItem ">
+                                <p class="h-4" class="mb-0">“Cuando oigo que un hombre tiene el hábito
+                                    de la
+                                    lectura, estoy
+                                    predispuesto a pensar bien de él”
+                                </p>
+                                <div class="blockquote-footer footerCita"> Nicolás de Avellaneda.</div>
+                            </blockquote>
                         </div>
-                        <div class="carousel-item">
-                            <div class="row gx-3 justify-content-center">
-                                <div class="col-xl-8">
-                                    <blockquote class="blockquote text-center">
-                                        <p class="h-4" class="mb-0">“Hay derrotas que tienen más dignidad que una
-                                            victoria”</p>
-                                        <div class="blockquote-footer footerCita">Jorge Luis Borges.</div>
-                                    </blockquote>
-                                </div>
-                            </div>
+                        <div class="carousel-item ">
+                            <blockquote class="blockquote text-center frasesItem align-middle  ">
+                                <p class="h-4" class="mb-0">“Hay derrotas que tienen más dignidad que
+                                    una
+                                    victoria”</p>
+                                <div class="blockquote-footer footerCita">Jorge Luis Borges.</div>
+                            </blockquote>
                         </div>
-                        <div class="carousel-item">
-                            <div class="row gx-3 justify-content-center">
-                                <div class="col-xl-8">
-                                    <blockquote class="blockquote text-center">
-                                        <p class="h-4" class="mb-0">“ Si buscas la perfección nunca estarás
-                                            contento”
-                                        </p>
-                                        <div class="blockquote-footer footerCita">Leo Tolstoy.</div>
-                                    </blockquote>
-                                </div>
-                            </div>
+                        <div class="carousel-item ">
+                            <blockquote class="blockquote text-center frasesItem  ">
+                                <p class="h-4" class="mb-0">“ Si buscas la perfección nunca estarás
+                                    contento”
+                                </p>
+                                <div class="blockquote-footer footerCita">Leo Tolstoy.</div>
+                            </blockquote>
                         </div>
-                        <div class="carousel-item">
-                            <div class="row gx-3 justify-content-center">
-                                <div class="col-xl-8">
-                                    <blockquote class="blockquote text-center">
-                                        <p class="h-4" class="mb-0">“Deja de preocuparte por envejecer y piensa en
-                                            crecer”</p>
-                                        <div class="blockquote-footer footerCita">Philip Roth.</div>
-                                    </blockquote>
-                                </div>
-                            </div>
+                        <div class="carousel-item ">
+                            <blockquote class="blockquote text-center frasesItem  ">
+                                <p class="h-4" class="mb-0">“Deja de preocuparte por envejecer y piensa
+                                    en
+                                    crecer”</p>
+                                <div class="blockquote-footer footerCita">Philip Roth.</div>
+                            </blockquote>
                         </div>
                     </div>
                     <!--  FIN CARROUSEL -->
                 </div>
             </div>
-        </section>
-        <!--  FIN FRASES -->
+        </div>
+    </section>
+    <!--  FIN FRASES -->
 
-        <!-- SECCION PORQUE ES BUENO LEER -->
-        <section class="razonesLectura">
-            <div class="container-fluid fondorazonesLectura">
-                <div class="container">
-                    <div class="row py-5 justify-content-center">
-                        <div class="col-md-6 col-lg-4 mb-5">
-                            <div class=" mx-auto">
-                                <div class="card-body text-center">
+    <!-- SECCION PORQUE ES BUENO LEER -->
+    <section class="razonesLectura vw-100">
+        <div class="container-fluid fondorazonesLectura">
+            <div class="container">
+                <div class="row py-5 justify-content-center">
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class=" mx-auto">
+                            <div class="card-body text-center">
 
-                                    <div class="bg-secondary bg-gradient text-white rounded-3 mb-4 mt-n4">
-                                        <i class="bi bi-book fa-2x"></i>
-                                    </div>
-
-                                    <h3 class="fs-4 fw-bold">La lectura es evasión y entretenimiento.</h3>
-                                    <p class="mb-0">Los libros transportan a las personas a otros lugares, momentos y
-                                        personajes sin moverse del sitio.
-                                    </p>
+                                <div class="bg-secondary bg-gradient text-white rounded-3 mb-4 mt-n4">
+                                    <i class="bi bi-book fa-2x"></i>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div class="col-md-6 col-lg-4 mb-5">
-                            <div class=" mx-auto">
-                                <div class="card-body text-center">
-                                    <div class="bg-secondary bg-gradient text-white rounded-3 mb-4 mt-n4">
-                                        <i class="bi bi-bookmark-heart fa-2x"></i> </div>
-
-                                    <h3 class="fs-4 fw-bold">La lectura favorece el aprendizaje.</h3>
-                                    <p class="mb-0">La información recibida se transforma en conocimiento.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                            <div class=" mx-auto">
-                                <div class="card-body text-center">
-                                    <div class=" bg-secondary bg-gradient text-white rounded-3 mb-4 mt-n4">
-                                        <i class="bi bi-journal fa-2x"></i> </div>
-
-                                    <h3 class="fs-4 fw-bold">La lectura despierta la curiosidad y alimenta la
-                                        imaginación.
-                                    </h3>
-                                    <p class="mb-0"> Leer activa la inspiración, imaginación y el surgimiento de ideas.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-4">
-                            <div class=" mx-auto">
-                                <div class="card-body text-center">
-                                    <div class=" bg-secondary bg-gradient text-white rounded-3 mb-4 mt-n4">
-                                        <i class="bi bi-journal-bookmark-fill fa-2x"></i> </div>
-
-                                    <h3 class="fs-4 fw-bold"> La lectura mejora las habilidades de comunicación. </h3>
-                                    <p class="mb-0"> La lectura, además de activar el cerebro, hace que se amplíe el
-                                        vocabulario, mejore la gramática y ortografía, y favorezca la consecución de
-                                        habilidades verbales, rapidez mental, toma de decisiones y confianza.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class=" mx-auto">
-                                <div class="card-body text-center">
-                                    <div class=" bg-secondary bg-gradient text-white rounded-3 mb-4 mt-n4">
-                                        <i class="bi bi-journal-bookmark-fill fa-2x"></i> </div>
-                                    <h3 class="fs-4 fw-bold">La lectura empatiza y sociabiliza. </h3>
-                                    <p class="mb-0"> Leer libros hace posible que cualquier persona lectora se ponga en
-                                        la
-                                        piel de otra, empatizando con ella en función de las situaciones vividas.
-                                    </p>
-                                </div>
+                                <h3 class="fs-4 fw-bold">La lectura es evasión y entretenimiento.</h3>
+                                <p class="mb-0">Los libros transportan a las personas a otros lugares, momentos y
+                                    personajes sin moverse del sitio.
+                                </p>
                             </div>
                         </div>
                     </div>
 
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class=" mx-auto">
+                            <div class="card-body text-center">
+                                <div class="bg-secondary bg-gradient text-white rounded-3 mb-4 mt-n4">
+                                    <i class="bi bi-bookmark-heart fa-2x"></i> </div>
+
+                                <h3 class="fs-4 fw-bold">La lectura favorece el aprendizaje.</h3>
+                                <p class="mb-0">La información recibida se transforma en conocimiento.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                        <div class=" mx-auto">
+                            <div class="card-body text-center">
+                                <div class=" bg-secondary bg-gradient text-white rounded-3 mb-4 mt-n4">
+                                    <i class="bi bi-journal fa-2x"></i> </div>
+
+                                <h3 class="fs-4 fw-bold">La lectura despierta la curiosidad y alimenta la
+                                    imaginación.
+                                </h3>
+                                <p class="mb-0"> Leer activa la inspiración, imaginación y el surgimiento de ideas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class=" mx-auto">
+                            <div class="card-body text-center">
+                                <div class=" bg-secondary bg-gradient text-white rounded-3 mb-4 mt-n4">
+                                    <i class="bi bi-journal-bookmark-fill fa-2x"></i> </div>
+
+                                <h3 class="fs-4 fw-bold"> La lectura mejora las habilidades de comunicación. </h3>
+                                <p class="mb-0"> La lectura, además de activar el cerebro, hace que se amplíe el
+                                    vocabulario, mejore la gramática y ortografía, y favorezca la consecución de
+                                    habilidades verbales, rapidez mental, toma de decisiones y confianza.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class=" mx-auto">
+                            <div class="card-body text-center">
+                                <div class=" bg-secondary bg-gradient text-white rounded-3 mb-4 mt-n4">
+                                    <i class="bi bi-journal-bookmark-fill fa-2x"></i> </div>
+                                <h3 class="fs-4 fw-bold">La lectura empatiza y sociabiliza. </h3>
+                                <p class="mb-0"> Leer libros hace posible que cualquier persona lectora se ponga en
+                                    la
+                                    piel de otra, empatizando con ella en función de las situaciones vividas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-        </section>
-        <!-- FIN SECCION PORQUE ES BUENO LEER -->
 
-
-
-    </main>
+            </div>
+    </section>
+    <!-- FIN SECCION PORQUE ES BUENO LEER -->
 
     <footer class="bg-black text-center align-items-center py-4">
         <div class="container px-5">

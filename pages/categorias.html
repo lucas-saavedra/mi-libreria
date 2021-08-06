@@ -17,35 +17,42 @@
     <meta name="author" content="Lucas Saavedra">
     <!--  copyright -->
     <meta name="copyright" content="Mi libreria S.A.">
-   
 
-    <script src="https://use.fontawesome.com/02747bd8aa.js"></script>
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../css/style.css">
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
 </head>
 
 <body>
-    <header>
-        <!-- INICIO EL NAVBAR BS -->
-        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-            <div class="container-fluid">
-                <!-- INICIO  LOGO  -->
-                <a class="navbar-brand" href="../index.html">
-                    <i class="fa fa-camera-retro fa-lg me-2"></i>
-                    Mi Libreria</a>
-                <!-- FIN LOGO -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <section id="fondoCategorias">
+
+        <header>
+            <!-- INICIO EL NAVBAR BS -->
+            <nav class="navbar navbar-expand-lg navbar-light navbar-custom ">
+                <div class="container-fluid">
+                    <!-- INICIO  LOGO  -->
+                    <a class="navbar-brand" href="../index.html">
+                        <i class="  logoAnim fa fa-camera-retro fa-lg me-2"></i>
+                        Mi Libreria</a>
+                    <!-- FIN LOGO -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <!-- INICIO NAV -->
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
@@ -57,115 +64,399 @@
                         <div class="d-flex navbar-nav ">
                             <a class=" nav-item"><a class="nav-link" href="newsletter.html">Newsletter</a>
                         </div>
-                         <!-- FIN NAV -->
-                    </ul>
-                    
+                        <!-- FIN NAV -->
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+            <!-- FIN NAVBAR BS -->
+        </header>
+
+
+        <section class="seccionCategorias">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="display-3 text-center mx-4 py-4"> Géneros de libros</h1>
+                    </div>
                 </div>
             </div>
-        </nav>
-        <!-- FIN NAVBAR BS -->
-    </header>
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col ">
-                    <h1> Categorias de libros y cómo se clasifican</h1>
-                    <p>
-                        Pero no todos los libros son iguales. Algunas obras editoriales son de consulta, otras explican
-                        historias fantasiosas y otros son ilustrados. Además, cada libro puede venir presentado en un
-                        formato diferenciado, o dirigirse a un público determinado.
+            <!-- Comienzan los iconos con sus respectivas explicaciones de los generos -->
+            <div class="container">
 
-                        En el artículo de hoy repasaremos las clases de libros que existen, según distintos criterios.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col ">
-                    <h3>
-                        Según su formato
-                    </h3>
-                    <p> Según su formato y presentación, los libros pueden ser:</p>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
 
-                    <div class="row row-cols-1 row-cols-md-2 g-4 ">
-                        <div class="col">
-                            <div class="card overflow ">
-                                <img src="https://source.unsplash.com/500x250/?book" class="card-img-top tarjeta_libro" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Libros de papel</h5>
-                                    <p class="card-text">El libro de papel es el clásico libro, el de
-                                        toda la vida. Puede tener
-                                        tapa
-                                        blanda o
-                                        tapa dura, pero el texto está sobre papel. Aunque gracias a las
-                                        nuevas
-                                        tecnologías
-                                        han aparecido nuevos formatos para poder leer las obras
-                                        editoriales,
-                                        éste sigue
-                                        siendo un formato muy utilizado.</p>
-                                </div>
+                    <!-- Icono en una tarjeta con una pequeña animacion -->
+                    <!-- Modal que se activa cada vez que se hace click dando una pequeña explicacion de ese género -->
+                    <!-- Aventura -->
+                    <div class="col-lg-4 text-center ">
+                        <div class="card justify-content-center align-middle shadow p-3 mb-5 bg-white rounded btn"
+                            data-bs-toggle="modal" data-bs-target="#aventuraModal">
+                            <i class="animacionCategoriasAventura  fas fa-helmet-battle fa-7x btn"></i>
+                            <div class="card-body">
+                                <h2 class="h3" class="card-title">Aventura</h2>
                             </div>
                         </div>
-                        <div class="col ">
-                            <div class="card overflow">
-                                <img src="https://source.unsplash.com/500x250/?ebook" class="card-img-top tarjeta_libro" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Ebook</h5>
-                                    <p class="card-text"> El libro electrónico ha ido ganando terreno en los últimos
-                                        años por su enorme comodidad. Para poder leerlo, es necesario tener un aparato,
-                                        como puede ser un “kindle”, es decir, un lector de libros electrónicos, o una
-                                        tableta. Aunque también es posible descargarse libros electrónicos en el
-                                        teléfono móvil.</p>
+                    </div>
+                    <div class="modal fade" id="aventuraModal" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title">Novelas de aventuras</h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
+                                <div class="modal-body">
+
+                                    <p class="text-center">
+                                        Lo primero que llama la atención de la novela de aventuras es que, siendo
+                                        una
+                                        subcategoría de la novela, sus límites son ambiguos, es decir, que puede
+                                        albergar en
+                                        ella otros subgéneros como el histórico, el policíaco o el romántico, por
+                                        ejemplo.
+                                        Muchos la consideran un tipo de literatura juvenil, aunque todos hemos oído
+                                        hablar
+                                        de sus grandes títulos y en algún momento nos hemos perdido entre sus
+                                        páginas.
+                                        Por lo general, en la novela de aventuras siempre hay un viaje. Un viaje
+                                        externo
+                                        que
+                                        el protagonista vive, en el que se enfrentará a situaciones comprometidas o
+                                        peligros, y también un viaje interior que le hará crecer y mejorar hasta
+                                        alcanzar
+                                        sus metas. Siempre será una iniciación en un saber que antes no se tenía.
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card overflow">
-                                <img src="https://source.unsplash.com/500x250/?interactive-books" class="tarjeta_libro card-img-top"
-                                    alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Libros interactivos</h5>
-                                    <p class="card-text">Los libros interactivos son libros digitales que, además de la
-                                        clásica lectura, permiten que el lector pueda interactuar y realizar
-                                        actividades. Por ejemplo, ejercicios online. Este tipo de libros utilizan todos
-                                        los recursos que ofrecen los últimos avances tecnológicos para ofrecer una
-                                        experiencia cualitativamente diferente a los lectores. Además, algunos de ellos
-                                        pueden incluso plantear un interesante diálogo entre el mundo de la literatura y
-                                        el de los videojuegos.</p>
-                                </div>
+                    </div>
+                    <!-- Fin Aventura -->
+                    <!-- Scifi -->
+                    <div class="col-lg-4 text-center ">
+                        <div class="card justify-content-center align-middle shadow p-3 mb-5 bg-white rounded btn"
+                            data-bs-toggle="modal" data-bs-target="#sciFiModal">
+                            <i class="animacionCategoriasNave fas fa-space-shuttle fa-7x btn"></i>
+                            <div class="card-body">
+                                <h2 class="card-title">Ciencia ficción</h2>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card overflow"> 
-                                <img src="https://source.unsplash.com/500x250/?comics" class="card-img-top tarjeta_libro" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Comics</h5>
-                                    <p class="card-text">Los cómics son historias explicadas a través de viñetas con
-                                        ilustraciones, que suelen tener un texto breve narrado por los propios
-                                        personajes. Aunque solía ser un género cuyos lectores eran niños y adolescentes,
-                                        en los últimos tiempos los cómics también causan furor entre personas adultas, y
-                                        en algunos círculos han pasado a ser conocidos como novelas gráficas.</p>
+                    </div>
+                    <div class="modal fade" id="sciFiModal" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title">Ciencia-ficción</h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-center">
+                                        No existe una única definición para explicar qué es la ciencia-ficción. En
+                                        realidad,
+                                        cada autor o ensayista ha gustado de dar su propio punto de vista y de
+                                        acotar el
+                                        género.
+                                    </p>
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p>Las historias de ciencia-ficción son viajes
+                                                extraordinarios a uno de los infinitos futuros concebibles.</p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                            Isaac Asimov
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p>Aquella forma de narrativa que versa sobre situaciones que no
+                                                podrían darse en el mundo que conocemos, pero cuya existencia se
+                                                funda
+                                                en cualquier
+                                                innovación.
+                                            </p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                            Kingsley
+                                            Amis
+                                        </figcaption>
+                                    </figure>
+                                    <p class="text-center">
+
+                                        El género se suele dividir en dos tendencias: ciencia-ficción hard o dura y
+                                        ciencia-ficción soft o blanda.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Fin Scifi  -->
+                    <!--Policial  -->
+                    <div class="col-lg-4 text-center">
+                        <div class=" card justify-content-center align-middle shadow p-3 mb-5 bg-white rounded btn"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="animacionCategoriasPoli fas fa-user-secret fa-7x btn" data-bs-toggle="modal"
+                                data-bs-target="#poliModal"></i>
+                            <div class="card-body">
+                                <h2 class="card-title">Policíaca</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="poliModal" tabindex="-1">
+                        <div class=" modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title">Policial</h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p> Un detective, un crimen, un asesino, un móvil... la novela policíaca
+                                                está
+                                                llena de
+                                                misterio y acción.
+                                                En este artículo te contamos sus inicios y te hablamos de los
+                                                escritores
+                                                y obras más representativos del género.
+                                            </p>
+                                        </blockquote>
+                                    </figure>
+                                    <h4 class="text-center">
+                                        Orígenes y características
+                                    </h4>
+                                    <p class="text-center">
 
 
+                                        La novela policíaca moderna, también llamada detectivesca o policial,
+                                        pertenece
+                                        al género narrativo y nació en el siglo XIX. Mediante la observación, el
+                                        análisis y la deducción se intenta resolver un enigma, normalmente un
+                                        crimen,
+                                        para encontrar al autor y su móvil.
 
+                                        En la novela policíaca el detective nunca fracasa, por tanto, siempre
+                                        obtendremos al final las respuestas a los interrogantes sembrados en sus
+                                        páginas. Nunca hablan de crímenes perfectos. El lector suele identificarse
+                                        con
+                                        el investigador y vive en primera persona las pesquisas que reconstruyen el
+                                        crimen hasta dar con el asesino.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--Fin Policial  -->
+                    <!--Hadas  -->
+                    <div class="col-lg-4 text-center ">
+                        <div class="card justify-content-center align-middle shadow p-3 mb-5 bg-white rounded btn"
+                            data-bs-toggle="modal" data-bs-target="#hadasModal">
+
+                            <i class="animacionCategoriasHada fas fa-unicorn fa-7x btn"></i>
+                            <div class="card-body">
+                                <h2 class="h3" class="card-title">Hadas</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="hadasModal" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="h3" class="card-title">Novela de Hadas</h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p>Las primeras muestras escritas datan del Antiguo Egipto, hace algo
+                                                más de
+                                                tres mil
+                                                años. También hay ejemplos de la India, Mesopotamia, la Antigua
+                                                Persia,
+                                                China,
+                                                Grecia, Roma... hasta nuestros días..
+                                                Pero, ¿qué son estas entidades que han llenado tantas horas de
+                                                asueto a
+                                                través del
+                                                tiempo? ¿Y cómo son sus historias?</p>
+                                        </blockquote>
+
+                                    </figure>
+                                    <h4 class="text-center"> ¿Qué son las hadas?</h4>
+                                    <p class="text-center">
+                                        La palabra «hada» proviene del término latino «fatum»: destino, fortuna, hado,
+                                        que
+                                        derivó a «fata» en latín vulgar, en referencia a las Parcas de la mitología
+                                        romana
+                                        (las Moiras griegas), que personificaban el Destino. De aquí derivó a otras
+                                        lenguas,
+                                        como «faie» o «fée» en francés, y «fay» o «fairy» en inglés, idioma en el que
+                                        «fate»
+                                        designa igualmente el sino de una persona.
+
+                                        Estas criaturas mágicas e intangibles, que interceden en los asuntos de los
+                                        humanos
+                                        para bien o para mal, existen en el imaginario popular desde tiempos
+                                        inmemoriales,
+                                        sin que se conozca realmente su origen. Aparecen en leyendas sánscritas, en la
+                                        mitología arábiga, entre las ninfas de la mitología griega, en la mitología
+                                        nórdica
+                                        e incluso hay testimonios entre las culturas indígenas americanas y en las islas
+                                        del
+                                        Pacífico Sur.
+
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--Fin Hadas  -->
+                    <!--Fantasia -->
+                    <div class="col-lg-4 text-center ">
+                        <div class="card justify-content-center align-middle shadow p-3 mb-5 bg-white rounded btn"
+                            data-bs-toggle="modal" data-bs-target="#fantasiaModal">
+
+                            <i class="animacionCategoriasFanta fas fa-dragon fa-7x btn"></i>
+                            <div class="card-body">
+                                <h2 class="card-title">Fantasía</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="fantasiaModal" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title">Novelas de Fantasía</h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p class="text-muted"> La fantasía siempre ha ocupado un lugar muy
+                                                importante
+                                                dentro del panorama global
+                                                literario.
+                                                Escritores como JRR Tolkien, CS Lewis, Michael Ende o Laura Gallego
+                                                se
+                                                han
+                                                adentrado en
+                                                este género numerosas veces.</p>
+                                        </blockquote>
+
+                                    </figure>
+
+                                    <p class="text-center"> La literatura fantástica, tal y como la conocemos hoy,
+                                        tiene
+                                        sus
+                                        cimientos a finales del
+                                        siglo XVIII y comienzos del XIX con la irrupción del Romanticismo, sus
+                                        hechos
+                                        extraordinarios, ambientes inquietantes y criaturas sobrenaturales. Así, el
+                                        género
+                                        fantástico plantea escenarios imaginarios y situaciones prodigiosas
+                                        protagonizadas
+                                        por
+                                        personajes heroicos, a menudo con poderes especiales, y la presencia de lo
+                                        mágico y
+                                        lo
+                                        legendario. No obstante, no era la primera vez que elementos semejantes
+                                        aparecían
+                                        por
+                                        escrito. La literatura fantástica cuenta con otros antecedentes más
+                                        antiguos,
+                                        como
+                                        el
+                                        mito greco-romano o la mitología hindú, celta y escandinava; la epopeya
+                                        clásica
+                                        —La
+                                        Ilíada, La Odisea—; los cantares de gesta y romances medievales —por
+                                        ejemplo, el
+                                        ciclo
+                                        artúrico—; la novela de caballerías del siglo XVI y la novela bizantina del
+                                        XVII, y,
+                                        por
+                                        supuesto, la novela gótica de finales del XVIII.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Fin Fantasia -->
+                    <!--Romance -->
+                    <div class="col-lg-4 text-center">
+                        <div class=" card justify-content-center align-middle shadow p-3 mb-5 bg-white rounded btn"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="animacionCategoriasHeart fas fa-heart fa-7x btn" data-bs-toggle="modal"
+                                data-bs-target="#romanceModal"></i>
+                            <div class="card-body">
+                                <h2 class="card-title">Romance</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="romanceModal" tabindex="-1">
+                        <div class=" modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title">Romance Paranormal</h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p class="text-muted"> El romance paranormal es un subgénero de la
+                                                literatura
+                                                romántica que ha conquistado a un gran número de adolescentes en los
+                                                últimos
+                                                años.
+                                            </p>
+                                        </blockquote>
+                                    </figure>
+
+                                    <h4 class="text-center">
+                                        Orígenes
+
+                                    </h4>
+                                    <p class="text-center">
+
+                                        Los primeros ejemplos de este género literario aparecieron a mediados de
+                                        1970 en
+                                        Estados Unidos, en novelas románticas enfocadas al público femenino, como
+                                        alternativa al tradicional romance histórico y también al realista. No
+                                        obstante,
+                                        debemos remontarnos aún más atrás para encontrar en literatura el verdadero
+                                        origen
+                                        de este tipo de historias: la novela gótica, nacida a finales del siglo
+                                        XVIII y
+                                        cultivada con éxito a lo largo del siglo XIX con lugares embrujados y seres
+                                        fantasmagóricos entre sus páginas.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--Fin Romance -->
                 </div>
             </div>
-        </div>
+        </section>
+    </section>
 
-    </main>
-    <footer class="bg-black text-center align-items-center py-4">
-        <div class="container px-5">
-            <div class="text-white-50 small">
-                <div class="mb-2">&copy; Lucas Saavedra - Desarrollo Web</div>
-            </div>
+    <footer class="bg-black text-center py-4 ">
+        <div class="text-white-50 small">
+            <div class="">&copy; Lucas Saavedra - Desarrollo Web</div>
         </div>
     </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
