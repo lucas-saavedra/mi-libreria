@@ -1,32 +1,73 @@
 /*rotacion del logo por dos segundos*/
-.banner img:hover {
+.logoAnim:hover {
   transform: rotate(360deg);
   transition: transform 2s;
 }
 
-
-
 /*tarjetas de los libros se aclaran cuando se pasa sobre ellos*/
-.container {
-
-  .tarjeta_libro:hover {
-    transform: scale(1.05, 1.05);
-    transition: transform 0.1s;
-
-  }
-
-  .overflow {
-    overflow: hidden;
+#fonfoBodyBlog {
+  .entradasBlog {
+    .card {
+      overflow: hidden;
+      .card-img-top:hover {
+        transform: scale(1.05, 1.05);
+        transition: transform 0.1s;
+      }
+    }
   }
 }
 
 
+
+
+.overflow:hover {
+  overflow: hidden;
+}
+
+@mixin animacion($tipo) {
+  animation: $tipo;
+  animation-duration: 2.5s;
+}
+
+.seccionCategorias {
+  .card {
+    overflow: hidden;
+  }
+/* A cada tarjeta de las categorias e le asigna una animacion diferente */
+  .animacionCategoriasAventura:hover {
+    @include animacion(rubberBand);
+  }
+
+  .animacionCategoriasNave:hover {
+    @include animacion(bounceOutRight);
+  }
+
+  .animacionCategoriasPoli:hover {
+    @include animacion(fadeOut);
+  }
+
+  .animacionCategoriasHada:hover {
+    @include animacion(shakeY);
+  }
+
+  .animacionCategoriasFanta:hover {
+    @include animacion(bounceOutUp);
+
+  }
+
+  .animacionCategoriasHeart:hover {
+    @include animacion(pulse);
+
+  }
+
+}
+
+
+
 /*pequeña animacion que descubre el titulo*/
-.titular h2 {
+.novedadesAnim {
   animation-duration: 3s;
   animation-name: mostrar_titulo;
-  animation-iteration-count: infinite;
-  width: 0%;
   overflow: hidden;
 }
 
@@ -36,19 +77,18 @@
   }
 
   25% {
-    width: 10%;
+    
   }
 
   50% {
-    width: 50%;
+    opacity: 0.5;
   }
 
   75% {
-    width: 75%;
+   
   }
 
   100% {
     opacity: 1;
-    width: 100%;
   }
 }

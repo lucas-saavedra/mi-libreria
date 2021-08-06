@@ -1,10 +1,32 @@
 /*aplicacion de media queries*/
-@media only screen and (max-width: 1200px) {}
 
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 1500px) {}
+
+@media only screen and (max-width: 768px) and (min-width: 300px) {
+/* el break achica la imagen de el crrusel de novedades para que quede mas estetico */
+    .novedadesImg {
+        height: 30vh;
+        overflow: hidden;
+    }
+}
+@media only screen and (max-width: 992px) {
+    /*  el break hace que la imagen de presentacion ocupe todo el veww port */
+    .fondoSelf {
+        height: 100vh;
+
+        .heroPresentacion {
+            height: 80vh;
+            display: flex;
+            align-items: center; 
+        }
+
+    }
+}
 
 @media only screen and (max-width: 768px) {
-  
+   
 }
+
 @media only screen and (max-width: 576px) {
+
 }

@@ -1,39 +1,4 @@
 @charset "UTF-8";
-/*rotacion del logo por dos segundos*/
-.banner img:hover {
-  transform: rotate(360deg);
-  transition: transform 2s; }
-
-/*tarjetas de los libros se aclaran cuando se pasa sobre ellos*/
-.container .tarjeta_libro:hover {
-  transform: scale(1.05, 1.05);
-  transition: transform 0.1s; }
-
-.container .overflow {
-  overflow: hidden; }
-
-/*pequeña animacion que descubre el titulo*/
-.titular h2 {
-  animation-duration: 3s;
-  animation-name: mostrar_titulo;
-  animation-iteration-count: infinite;
-  width: 0%;
-  overflow: hidden; }
-
-@keyframes mostrar_titulo {
-  0% {
-    opacity: 0; }
-  25% {
-    width: 10%; }
-  50% {
-    width: 50%; }
-  75% {
-    width: 75%; }
-  100% {
-    opacity: 1;
-    width: 100%; } }
-
-/*aplicacion de media queries*/
 /* PALETA DE COLORES*/
 /*  BODY */
 body {
@@ -44,52 +9,58 @@ body {
 
 /* clase para la section novedades */
 .novedadesFondo {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/libros.jpg"); }
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("https://source.unsplash.com/sfL_QOnmy00/600x400"); }
   .novedadesFondo .novedadesHero h1 {
     color: #e6ccb2; }
   .novedadesFondo .novedadesHero h2 {
     color: #9c6644; }
   .novedadesFondo .novedadesHero p {
-    color: #e6ccb2;
+    color: #ede0d4;
     font-size: 1.25em; }
+  .novedadesFondo .heroIndex {
+    height: 80vh;
+    display: flex;
+    align-items: center; }
+  .novedadesFondo .novedadesImg, .novedadesFondo .novedadesImgNews, .novedadesFondo .novedadesImgPago, .novedadesFondo .novedadesImgDelivery {
+    border-radius: 1%;
+    height: 20em; }
   .novedadesFondo .novedadesImgNews {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("https://source.unsplash.com/_Zua2hyvTBk/600x400");
-    height: 15em;
-    border-radius: 1%; }
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("https://source.unsplash.com/_Zua2hyvTBk/600x400"); }
   .novedadesFondo .novedadesImgPago {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("https://source.unsplash.com/s8F8yglbpjo/600x400");
-    height: 15em;
-    border-radius: 1%; }
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("https://source.unsplash.com/s8F8yglbpjo/600x400"); }
   .novedadesFondo .novedadesImgDelivery {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("https://source.unsplash.com/phUtWl8RyFE/600x400");
-    height: 15em;
-    border-radius: 1%; }
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("https://source.unsplash.com/phUtWl8RyFE/600x400"); }
 
 /*Seccion frases*/
 .frases {
-  height: 11em;
-  background: linear-gradient(to bottom, #9c6644, #7f5539);
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #e0d0bc69; }
+  .frases .carousel-inner {
+    height: 10em; }
   .frases p {
-    color: #e6ccb2; }
+    color: #20150e; }
   .frases .footerCita {
-    color: #b9b2a4; }
+    color: #8a7856; }
 
 /*seccion razones para leer*/
 .razonesLectura .fondorazonesLectura {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("https://source.unsplash.com/v8DSLoY80Xk/600x400"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("https://source.unsplash.com/v8DSLoY80Xk/600x400"); }
 
 .razonesLectura h3 {
   color: #ede0d4; }
@@ -97,24 +68,126 @@ body {
 .razonesLectura p {
   color: #e6ccb2; }
 
-.fondoSelf {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("https://source.unsplash.com/IuLgi9PWETU/600x400"); }
+.fondoBodyAbout {
+  background-color: #e0d0bc69; }
+  .fondoBodyAbout .TarjetaAbout {
+    text-align: justify;
+    text-justify: inter-word;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+    padding: 0.5em;
+    border-radius: 10px 10px; }
+    .fondoBodyAbout .TarjetaAbout img {
+      width: 100%;
+      height: 100%; }
+    .fondoBodyAbout .TarjetaAbout h2 {
+      color: #9c6644;
+      font-weight: bold; }
+  .fondoBodyAbout .fondoSelf {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("https://source.unsplash.com/FoG8lotg7AA/700x400"); }
 
-.imgFondo {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("books"); }
+#fonfoBodyBlog {
+  background-color: #e0d0bc69; }
+  #fonfoBodyBlog .btn-secondary {
+    background-color: #7f5539; }
 
-#imgRandom {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("black"); }
+#fondoCategorias {
+  background-color: #e0d0bc69;
+  min-height: 90vh; }
+  #fondoCategorias .seccionCategorias i {
+    color: #7f5539; }
+
+#fondoNews {
+  background-color: #e0d0bc69; }
+  #fondoNews .mainNews {
+    min-height: 90vh; }
+    #fondoNews .mainNews .newsForm {
+      min-height: 90vh;
+      display: flex;
+      align-items: center; }
+      #fondoNews .mainNews .newsForm .btn-secondary {
+        background-color: #7f5539; }
+      #fondoNews .mainNews .newsForm .btn-light {
+        background-color: #b99f8e; }
 
 footer {
-  background-color: #6d6875;
-  height: 5em; }
+  background-color: #20150e;
+  min-height: 10vh;
+  left: 0;
+  bottom: 0;
+  width: 100%; }
+
+/*rotacion del logo por dos segundos*/
+.logoAnim:hover {
+  transform: rotate(360deg);
+  transition: transform 2s; }
+
+/*tarjetas de los libros se aclaran cuando se pasa sobre ellos*/
+#fonfoBodyBlog .entradasBlog .card {
+  overflow: hidden; }
+  #fonfoBodyBlog .entradasBlog .card .card-img-top:hover {
+    transform: scale(1.05, 1.05);
+    transition: transform 0.1s; }
+
+.overflow:hover {
+  overflow: hidden; }
+
+.seccionCategorias {
+  /* A cada tarjeta de las categorias e le asigna una animacion diferente */ }
+  .seccionCategorias .card {
+    overflow: hidden; }
+  .seccionCategorias .animacionCategoriasAventura:hover {
+    animation: rubberBand;
+    animation-duration: 2.5s; }
+  .seccionCategorias .animacionCategoriasNave:hover {
+    animation: bounceOutRight;
+    animation-duration: 2.5s; }
+  .seccionCategorias .animacionCategoriasPoli:hover {
+    animation: fadeOut;
+    animation-duration: 2.5s; }
+  .seccionCategorias .animacionCategoriasHada:hover {
+    animation: shakeY;
+    animation-duration: 2.5s; }
+  .seccionCategorias .animacionCategoriasFanta:hover {
+    animation: bounceOutUp;
+    animation-duration: 2.5s; }
+  .seccionCategorias .animacionCategoriasHeart:hover {
+    animation: pulse;
+    animation-duration: 2.5s; }
+
+/*pequeña animacion que descubre el titulo*/
+.novedadesAnim {
+  animation-duration: 3s;
+  animation-name: mostrar_titulo;
+  overflow: hidden; }
+
+@keyframes mostrar_titulo {
+  0% {
+    opacity: 0; }
+  25% { }
+  50% {
+    opacity: 0.5; }
+  75% { }
+  100% {
+    opacity: 1; } }
+
+/*aplicacion de media queries*/
+@media only screen and (max-width: 768px) and (min-width: 300px) {
+  /* el break achica la imagen de el crrusel de novedades para que quede mas estetico */
+  .novedadesImg, .novedadesFondo .novedadesImgNews, .novedadesFondo .novedadesImgPago, .novedadesFondo .novedadesImgDelivery {
+    height: 30vh;
+    overflow: hidden; } }
+
+@media only screen and (max-width: 992px) {
+  /*  el break hace que la imagen de presentacion ocupe todo el veww port */
+  .fondoSelf {
+    height: 100vh; }
+    .fondoSelf .heroPresentacion {
+      height: 80vh;
+      display: flex;
+      align-items: center; } }

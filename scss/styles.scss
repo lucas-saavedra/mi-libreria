@@ -1,12 +1,11 @@
-@import "transitions.scss";
-@import "mediaqueries.scss";
-
 /* PALETA DE COLORES*/
 
 $gris_obscuro : #6d6875;
-$marron_obscuro : #7f5539;
+$marron : #7f5539;
+$marron_obscuro : #20150e;
 $marron_claro : #9c6644;
 $marron_acuarela : #b99f8e;
+$fondo_claro:#e0d0bc69;
 $madera : #e6ccb2;
 $beige : #ede0d4;
 
@@ -22,16 +21,15 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),
             rgba(0, 0, 0, 0.8)), url($url);
-    
 }
 
 /* clase para la section novedades */
 .novedadesFondo {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.7)), url('../img/libros.jpg');
-
+    min-height: 100vh;
+    @include imagen('https://source.unsplash.com/sfL_QOnmy00/600x400');
+   
     .novedadesHero {
         h1 {
             color: $madera;
@@ -42,43 +40,55 @@ body {
         }
 
         p {
-            color: $madera;
+            color: $beige;
             font-size: 1.25em;
         }
-        
+
+
+    }
+
+    .heroIndex {
+        height: 80vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .novedadesImg {
+        border-radius: 1%;
+        height: 20em;
     }
 
     .novedadesImgNews {
         @include imagen('https://source.unsplash.com/_Zua2hyvTBk/600x400');
-        height: 15em;
-        border-radius: 1%;
+        @extend .novedadesImg;
     }
 
     .novedadesImgPago {
         @include imagen('https://source.unsplash.com/s8F8yglbpjo/600x400');
-        height: 15em;
-        border-radius: 1%;
+        @extend .novedadesImg;
     }
 
     .novedadesImgDelivery {
         @include imagen('https://source.unsplash.com/phUtWl8RyFE/600x400');
-        height: 15em;
-        border-radius: 1%;
+        @extend .novedadesImg;
     }
 }
 
 /*Seccion frases*/
 .frases {
-    height: 11em;
-    background: linear-gradient(to bottom, $marron_claro, $marron_obscuro);
+    .carousel-inner {
+        height: 10em;
+    }
+
     overflow: hidden;
+    background-color: $fondo_claro;
 
     p {
-        color: $madera;
+        color: $marron_obscuro;
     }
 
     .footerCita {
-        color: rgb(185, 178, 164);
+        color: rgb(138, 120, 86);
     }
 }
 
@@ -87,33 +97,102 @@ body {
     .fondorazonesLectura {
         @include imagen('https://source.unsplash.com/v8DSLoY80Xk/600x400');
     }
-    h3{
+
+    h3 {
         color: $beige
     }
-    p{
+
+    p {
         color: $madera
     }
 }
 
+.fondoBodyAbout {
+    background-color: $fondo_claro;
+
+    .TarjetaAbout {
+
+        text-align: justify;
+        text-justify: inter-word;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2em 0;
+        padding: 0.5em;
+        border-radius: 10px 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        h2 {
+            color: $marron_claro;
+            font-weight: bold;
+        }
 
 
-.fondoSelf {
-    @include imagen('https://source.unsplash.com/IuLgi9PWETU/600x400');
+    }
+    .fondoSelf {
+        @include imagen("https://source.unsplash.com/FoG8lotg7AA/700x400");
+    }
 }
 
-.imgFondo {
-    @include imagen('books');
+
+
+#fonfoBodyBlog {
+    background-color: $fondo_claro;
+
+    .btn-secondary {
+        background-color: $marron;
+    }
 }
 
-#imgRandom {
-    @include imagen('black');
 
+
+#fondoCategorias {
+    background-color: $fondo_claro;
+    min-height: 90vh;
+
+    .seccionCategorias {
+        i {
+            color: $marron;
+        } 
+    } 
 }
 
+#fondoNews {
+    background-color: $fondo_claro;
 
+    .mainNews {
+        min-height: 90vh;
 
+        .newsForm {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+
+            .btn-secondary {
+                background-color: $marron;
+            }
+
+            .btn-light {
+                background-color: $marron_acuarela;
+            }
+        }
+
+    }
+
+}
 
 footer {
-    background-color: $gris_obscuro;
-    height: 5em;
+
+    background-color: $marron_obscuro;
+    min-height: 10vh;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
+
+@import "transitions.scss";
+@import "mediaqueries.scss";
